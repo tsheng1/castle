@@ -12,7 +12,7 @@ const App = () => (
     <Modal />
     <header className="header-bar">
       <Link to="/" className="header-link">
-        <img src={window.logo} />
+        <img src={window.logo} className="logo" />
       </Link>
       <GreetingContainer />
     </header>

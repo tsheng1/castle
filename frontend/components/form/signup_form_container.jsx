@@ -18,8 +18,8 @@ const mdp = dispatch => {
     processForm: (user) => dispatch(signup(user)),
     closeModal: () => dispatch(closeModal()),
     buttonForm: (
-      <button onClick={() => dispatch(openModal('login'))} >
-        Sign up
+      <button className="redirect-button" onClick={() => dispatch(openModal('login'))} >
+        Log in
       </button>
     )
   };

@@ -19,6 +19,10 @@ class SessionForm extends React.Component {
     this.props.processForm(user).then(this.props.closeModal);
   }
 
+  // handleDemo() {
+
+  // }
+
   update(field) {
     return (e) => {
       this.setState({[field]: e.target.value})
@@ -48,8 +52,8 @@ class SessionForm extends React.Component {
       passPlaceholder = "Create a Password"
       extraInputs = 
       <div>
-        <input type="text" placeholder="First name" onChange={this.update('first_name')} /> <br/>
-        <input type="text" placeholder="Last name" onChange={this.update('last_name')} />
+        <input className="sign-input" type="text" placeholder="First name" onChange={this.update('first_name')} /> <br/>
+        <input className="sign-input" type="text" placeholder="Last name" onChange={this.update('last_name')} />
       </div>;
 
     } else {
@@ -61,15 +65,16 @@ class SessionForm extends React.Component {
     
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit}>
-          <div onClick={this.props.closeModal} className="closex" >X</div>
+        <form className="sign-form" onSubmit={this.handleSubmit}>
+          <div onClick={this.props.closeModal} ><img src={window.closex} className="closex" /></div>
           <ul>{this.renderErrors()}</ul>
-          <input type="text" onChange={this.update('email')} placeholder="Email address"/> <br/>
+          <input className="sign-input" type="text" onChange={this.update('email')} placeholder="Email Address"/> <br/>
           {extraInputs}
-          <input type="password" onChange={this.update('password')} placeholder={passPlaceholder} /> <br />
-          <input type="submit" value={this.props.formType}/>
+          <input className="sign-input" type="password" onChange={this.update('password')} placeholder={passPlaceholder} /> <br />
+          {/* <button className="sign-demo" onClick={handleDemo}>Demo Login</button> */}
+          <input className="sign-submit" type="submit" value={this.props.formType}/>
           <br/>
-          {text} {this.props.buttonForm}
+          <p className="sign-text">{text}</p> &nbsp; {this.props.buttonForm}
         </form>
       </div>
     )

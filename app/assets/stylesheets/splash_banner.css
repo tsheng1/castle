@@ -5,11 +5,12 @@
   width: 100%;
 }
 
-.login-signup {
+.logout-button, .login-signup {
   margin-left: auto;
+  padding-right: 15px;
 }
 
-.login-signup > button {
+.logout-button, .login-signup > button {
   border: none;
   background: none;
   height: 100%;
@@ -19,7 +20,7 @@
   padding-right: 15px;
 }
 
-.login-signup > button:hover {
+.logout-button:hover, .login-signup > button:hover {
   border-bottom: 2px solid white;
   cursor: pointer;
 }
@@ -29,9 +30,10 @@
   width: 80px;
 }
 
-img {
+.logo {
   height: 34px;
-  width: 34px;
+  width: 25px;
   display: block;
-  margin: 23px;
+  margin: 26px;
+  margin-left: 30px;
 }

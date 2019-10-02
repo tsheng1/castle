@@ -11,10 +11,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
   );
 
   const personalGreeting = () => (
-    <div className="pgreeting">
-      <h3 className="greeting-name">Hi, {currentUser.name}</h3>
       <button className="logout-button" onClick={logout}>Log Out</button>
-    </div>
   );
 
   return (
