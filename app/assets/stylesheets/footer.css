@@ -1,0 +1,11 @@
+.footer {
+  background-color: white;
+  text-align: right;
+  color: darkgray;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+  clear: both;
+  position: relative;
+  top: 380px;
+}

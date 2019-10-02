@@ -5,7 +5,8 @@ import SignupFormContainer from '../components/form/signup_form_container';
 import LoginFormContainer from '../components/form/login_form_container';
 import {AuthRoute} from '../util/route_util';
 import Modal from './modal/modal';
-import Search from './search/search'
+import Search from './search/search';
+import Footer from './footer/footer';
 
 const App = () => (
   <div className="landing-page">
@@ -18,6 +19,7 @@ const App = () => (
     </header>
 
     <Search />
+    <Footer />
   </div>
 );
 
