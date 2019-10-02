@@ -5,6 +5,7 @@ import SignupFormContainer from '../components/form/signup_form_container';
 import LoginFormContainer from '../components/form/login_form_container';
 import {AuthRoute} from '../util/route_util';
 import Modal from './modal/modal';
+import Search from './search/search'
 
 const App = () => (
   <div>
@@ -16,8 +17,7 @@ const App = () => (
       <GreetingContainer />
     </header>
 
-    {/* <AuthRoute path="/login" component={LoginFormContainer} />
-    <AuthRoute path="/signup" component={SignupFormContainer} /> */}
+    <Search />
   </div>
 );
 
