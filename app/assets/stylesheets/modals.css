@@ -63,6 +63,26 @@
   border-radius: 4px;
   transition-property: background, border-color, color;
   transition-duration: .2s;
+  margin-bottom: 25px;
+  width: 505px;
+}
+
+.sign-demo {
+  color: white;
+  background-color: #4ABDAC;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  height: 48px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: background, border-color, color;
+  transition-duration: .2s;
   margin-top: 30px;
   margin-bottom: 25px;
   width: 505px;
@@ -92,4 +112,9 @@
 
 .redirect-button:hover {
   border-bottom: 1px solid rgb(0, 132, 137);
+}
+
+.errors {
+  list-style: none;
+  color: #d93900;
 }

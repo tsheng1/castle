@@ -11,6 +11,7 @@ class SessionForm extends React.Component {
       last_name: ""
     }
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   handleSubmit(e) {
@@ -19,9 +20,19 @@ class SessionForm extends React.Component {
     this.props.processForm(user).then(this.props.closeModal);
   }
 
-  // handleDemo() {
+  handleDemo(e) {
+    e.preventDefault();
+    const demoUser = {
+      email: "demo123@castle.com",
+      password: "password"
+    }
 
-  // }
+    if (this.props.formType === "Sign up") {
+      this.props.login(demoUser).then(this.props.closeModal);
+    } else {
+      this.props.processForm(demoUser).then(this.props.closeModal);
+    }
+  }
 
   update(field) {
     return (e) => {
@@ -67,11 +78,11 @@ class SessionForm extends React.Component {
       <div className="login-form-container">
         <form className="sign-form" onSubmit={this.handleSubmit}>
           <div onClick={this.props.closeModal} ><img src={window.closex} className="closex" /></div>
-          <ul>{this.renderErrors()}</ul>
+          <ul className="errors">{this.renderErrors()}</ul>
           <input className="sign-input" type="text" onChange={this.update('email')} placeholder="Email Address"/> <br/>
           {extraInputs}
           <input className="sign-input" type="password" onChange={this.update('password')} placeholder={passPlaceholder} /> <br />
-          {/* <button className="sign-demo" onClick={handleDemo}>Demo Login</button> */}
+          <button className="sign-demo" onClick={this.handleDemo}>Demo Login</button>
           <input className="sign-submit" type="submit" value={this.props.formType}/>
           <br/>
           <p className="sign-text">{text}</p> &nbsp; {this.props.buttonForm}
