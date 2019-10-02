@@ -8,7 +8,7 @@ import Modal from './modal/modal';
 import Search from './search/search'
 
 const App = () => (
-  <div>
+  <div className="landing-page">
     <Modal />
     <header className="header-bar">
       <Link to="/" className="header-link">
