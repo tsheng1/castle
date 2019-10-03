@@ -8,7 +8,6 @@ import { openModal, closeModal } from '../../actions/modal_actions'
 const msp = ({ errors }) => {
   return {
     formType: 'Sign up',
-    // navLink: <Link to="/login">Log In</Link>,
     errors: errors.session,
   };
 };

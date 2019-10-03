@@ -1,12 +1,20 @@
 class User < ApplicationRecord
 
   attr_reader :password
-
+  
   validates :email, :first_name, :last_name, :password_digest, :session_token,  presence: true
   validates :email, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
+  validates :birthdate, presence: true, allow_nil: true
+  validate :validate_birthdate
 
   after_initialize :ensure_session_token
+
+  def validate_birthdate
+    if !self.birthdate || Date.today.ago(18.year) < self.birthdate
+      errors.add(:base, "To sign up, you must be 18 or older.")
+    end
+  end
 
   def password=(password)
     @password = password
