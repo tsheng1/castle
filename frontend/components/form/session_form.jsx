@@ -40,14 +40,13 @@ class SessionForm extends React.Component {
     }
   }
 
-  renderErrors() {
-    return (
-      this.props.errors.map((error, idx) => {
-        return (
-            <li key={idx}>{error}</li>
-        )
-      })
-    )
+  getErrors() {
+    // let errorObj; 
+    // this.props.errors.map((error, idx) => {
+    //   let word = error.split(" ")[0];
+    //   errorObj[word] = <li key={idx}>{error}</li>
+    // })
+    // console.log(errorObj);
   }
 
   render() {
@@ -78,7 +77,7 @@ class SessionForm extends React.Component {
       <div className="login-form-container">
         <form className="sign-form" onSubmit={this.handleSubmit}>
           <div onClick={this.props.closeModal} ><img src={window.closex} className="closex" /></div>
-          <ul className="errors">{this.renderErrors()}</ul>
+          <ul className="errors">{this.getErrors()}</ul>
           <input className="sign-input" type="text" onChange={this.update('email')} placeholder="Email Address"/> <br/>
           {extraInputs}
           <input className="sign-input" type="password" onChange={this.update('password')} placeholder={passPlaceholder} /> <br />
