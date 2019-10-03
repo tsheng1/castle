@@ -88,6 +88,7 @@ class SessionForm extends React.Component {
     let text;
     let extraInputs;
     let passPlaceholder;
+    let dateSel;
     if (this.props.formType === "Sign up") {
       otherPath = "login"
       oppForm = "Log in"
@@ -100,6 +101,39 @@ class SessionForm extends React.Component {
         <input className={`sign-input${this.errorClass(lastErr)}`} type="text" placeholder="Last name" onChange={this.update('last_name')} />
         <p className={`error-message${this.errorClass(firstErr)}`}>{this.errorExist(lastErr)}</p>
       </div>);
+
+      dateSel = (
+        <div>
+          <p className="birthday">Birthday</p>
+          <p className="birthday-text">To sign up, you need to be at least 18. Other people who use Castle won't see your birthday.</p>
+          <p className={`error-message${this.errorClass(ageErr)}`}>{this.errorExist(ageErr)}</p>
+          <div className="birthdate-selector">
+            <select onChange={this.update('birth_month')} id="month-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
+              <option disabled value="">Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select onChange={this.update('birth_day')} id="day-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
+              <option disabled value="">Day</option>
+              {days}
+            </select>
+            <select onChange={this.update('birth_year')} id="year-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
+              <option disabled value="">Year</option>
+              {years}
+            </select>
+          </div>
+        </div>
+      )
 
     } else {
         otherPath = "signup"
@@ -135,34 +169,7 @@ class SessionForm extends React.Component {
           <input className={`sign-input${this.errorClass(passErr)}`} type="password" onChange={this.update('password')} placeholder={passPlaceholder} /> <br />
           <p className={`error-message${this.errorClass(passErr)}`}>{this.errorExist(passErr)}</p>
 
-          <p>Birthday</p>
-          <p>To sign up, you need to be at least 18. Other people who use Castle won't see your birthday.</p>
-          <p className={`error-message${this.errorClass(ageErr)}`}>{this.errorExist(ageErr)}</p>
-          <div className = "birthdate-selector">
-            <select onChange={this.update('birth_month')} id="month-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
-              <option disabled value="">Month</option>
-              <option value="1">January</option>
-              <option value="2">February</option>
-              <option value="3">March</option>
-              <option value="4">April</option>
-              <option value="5">May</option>
-              <option value="6">June</option>
-              <option value="7">July</option>
-              <option value="8">August</option>
-              <option value="9">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-            </select>
-            <select onChange={this.update('birth_day')} id="day-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
-              <option disabled value="">Day</option>
-              {days}
-            </select>
-            <select onChange={this.update('birth_year')} id="year-selector" className={`date-select${this.errorClass(ageErr)}`} defaultValue="">
-              <option disabled value="">Year</option>
-              {years}
-            </select>
-          </div>
+          {dateSel}
           
           <button className="sign-demo" onClick={this.handleDemo}>Demo Login</button>
           <input className="sign-submit" type="submit" value={this.props.formType}/>

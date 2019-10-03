@@ -37,7 +37,7 @@
   font-size: 16px;
   padding: 11px;
   color: rgb(72, 72, 72); 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .sign-input-error {
@@ -185,4 +185,16 @@
 #day-selector {
   width: 155.33px;
   height: 46px;
+}
+
+.birthday {
+  color: #484848;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.birthday-text {
+  color: #484848;
+  font-size: 14px;
+  font-weight: 300;
 }
