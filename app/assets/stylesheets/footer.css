@@ -1,5 +1,4 @@
 .footer {
-  position: absolute;
   background-color: white;
   text-align: right;
   color: darkgray;
@@ -7,6 +6,7 @@
   height: 40px;
   vertical-align: middle;
   clear: both;
-  position: relative;
-  top: 380px;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 5px;
 }

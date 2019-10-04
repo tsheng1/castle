@@ -16339,3 +16339,134 @@ No template found for Api::SessionsController#destroy, rendering head :no_conten
 Completed 204 No Content in 112ms (ActiveRecord: 2.2ms)
 
 
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (13.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:9
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.6ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo123@castle.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (18.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at", "birthdate") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "demo123@castle.com"], ["first_name", "Castle"], ["last_name", "Demo"], ["password_digest", "$2a$12$w9Yf6AS.Ba128guQd0nwfemOALFb6CfyRjpZ0Cr/uwaSKAzph0QSC"], ["session_token", "s9GEkNqo_kwCdb3fnwtI1A"], ["created_at", "2019-10-04 18:16:22.965558"], ["updated_at", "2019-10-04 18:16:22.965558"], ["birthdate", "1995-12-12"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mListing Create (1.7ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing1"], ["description", "Nice apartment"], ["price", 250], ["location", "Manhattan"], ["lng", -73.975807], ["lat", 40.758675], ["num_bed", 2], ["num_bath", 1], ["max_guests", 4], ["home_type", "Apartment"], ["created_at", "2019-10-04 18:16:22.994905"], ["updated_at", "2019-10-04 18:16:22.994905"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mListing Create (0.6ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing2"], ["description", "Okay apartment"], ["price", 150], ["location", "Manhattan"], ["lng", -74.007688], ["lat", 40.715847], ["num_bed", 1], ["num_bath", 1], ["max_guests", 2], ["home_type", "Apartment"], ["created_at", "2019-10-04 18:16:22.999075"], ["updated_at", "2019-10-04 18:16:22.999075"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing3"], ["description", "Okay brownstone"], ["price", 200], ["location", "Manhattan"], ["lng", -73.96262], ["lat", 40.771419], ["num_bed", 3], ["num_bath", 2], ["max_guests", 5], ["home_type", "House"], ["created_at", "2019-10-04 18:16:23.002153"], ["updated_at", "2019-10-04 18:16:23.002153"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:9
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (9.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (2.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (8.9ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (2.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo123@castle.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at", "birthdate") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "demo123@castle.com"], ["first_name", "Castle"], ["last_name", "Demo"], ["password_digest", "$2a$12$wQ4D5zYxe9/wClWEH7WPmeEhKal.krojYK87NEe1IHTJu7hzrCqoa"], ["session_token", "IZzGFvGwDV8kA5wytusoEg"], ["created_at", "2019-10-04 18:32:13.124975"], ["updated_at", "2019-10-04 18:32:13.124975"], ["birthdate", "1995-12-12"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "Modern Apartment"], ["description", "Nice apartment"], ["price", 250], ["location", "Manhattan"], ["lng", -73.975807], ["lat", 40.758675], ["num_bed", 2], ["num_bath", 1], ["max_guests", 4], ["home_type", "Entire Apartment"], ["created_at", "2019-10-04 18:32:13.129572"], ["updated_at", "2019-10-04 18:32:13.129572"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "Unique Studio Apartment"], ["description", "Okay apartment"], ["price", 150], ["location", "Manhattan"], ["lng", -74.007688], ["lat", 40.715847], ["num_bed", 1], ["num_bath", 1], ["max_guests", 2], ["home_type", "Studio"], ["created_at", "2019-10-04 18:32:13.132195"], ["updated_at", "2019-10-04 18:32:13.132195"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "Large Brownstone"], ["description", "Okay brownstone"], ["price", 200], ["location", "Manhattan"], ["lng", -73.96262], ["lat", 40.771419], ["num_bed", 3], ["num_bath", 2], ["max_guests", 5], ["home_type", "Entire Apartment"], ["created_at", "2019-10-04 18:32:13.134646"], ["updated_at", "2019-10-04 18:32:13.134646"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
