@@ -1,4 +1,5 @@
 .footer {
+  position: absolute;
   background-color: white;
   text-align: right;
   color: darkgray;

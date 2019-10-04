@@ -7,8 +7,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= favicon_link_tag asset_path('favicon.png') %>
     <script type="text/javascript">
       window.logo = "<%= image_url('logo.png') %>"
+    </script>
+    <script type="text/javascript">
+      window.logo_red = "<%= image_url('logo_red.png') %>"
     </script>
     <script type="text/javascript">
       window.closex = "<%= image_url('closex.png') %>"

@@ -1,0 +1,38 @@
+.filter-button {
+  font-size: 14px;
+  color: #484848;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.filter-buttons {
+  padding-left: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.list-map {
+  display: flex;
+}
+
+.listing-boxes {
+  width: 43.75%;
+  padding: 0 24px;
+  padding-top: 33px;
+}
+
+.map {
+  width: 56.25%;
+}
+
+.list-box {
+  height: 228px;
+  list-style: none;
+}

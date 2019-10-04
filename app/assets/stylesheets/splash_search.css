@@ -94,3 +94,8 @@
   margin-left: 275px;
 }
 
+.landing {
+  min-height: 900;
+  position: relative;
+}
+

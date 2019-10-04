@@ -10,7 +10,7 @@
 
 .modal-child {
   position: absolute;
-  top: 50%;
+  top: 436px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;

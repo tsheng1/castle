@@ -9961,3 +9961,2753 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-10-03 16:40:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 1639ms (Views: 1634.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:46:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 144ms (Views: 141.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:47:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 135ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:47:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 107ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:47:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 99ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 16:48:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 97ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:11:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 664ms (Views: 658.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:12:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:14:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 528ms (Views: 521.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:14:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (16.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo123@castle.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "first_name", "last_name", "password_digest", "session_token", "created_at", "updated_at", "birthdate") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "demo123@castle.com"], ["first_name", "Castle"], ["last_name", "Demo"], ["password_digest", "$2a$12$ze1/EsSRgIT88ZXCfHFrMO0iVIhUeV/aTCEudiWqnEjaCzrDh9LvG"], ["session_token", "GdzoY6LOr3iw4Mpx2-b5bA"], ["created_at", "2019-10-03 21:15:11.529862"], ["updated_at", "2019-10-03 21:15:11.529862"], ["birthdate", "1995-12-12"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mListing Create (8.5ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing1"], ["description", "Nice apartment"], ["price", 250], ["location", "Manhattan"], ["lng", -73.975807], ["lat", 40.758675], ["num_bed", 2], ["num_bath", 1], ["max_guests", 4], ["home_type", "Apartment"], ["created_at", "2019-10-03 21:15:11.556573"], ["updated_at", "2019-10-03 21:15:11.556573"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing2"], ["description", "Okay apartment"], ["price", 150], ["location", "Manhattan"], ["lng", -74.007688], ["lat", 40.715847], ["num_bed", 1], ["num_bath", 1], ["max_guests", 2], ["home_type", "Apartment"], ["created_at", "2019-10-03 21:15:11.567369"], ["updated_at", "2019-10-03 21:15:11.567369"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("title", "description", "price", "location", "lng", "lat", "num_bed", "num_bath", "max_guests", "home_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "listing3"], ["description", "Okay brownstone"], ["price", 200], ["location", "Manhattan"], ["lng", -73.96262], ["lat", 40.771419], ["num_bed", 3], ["num_bath", 2], ["max_guests", 5], ["home_type", "House"], ["created_at", "2019-10-03 21:15:11.569834"], ["updated_at", "2019-10-03 21:15:11.569834"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+Started GET "/" for ::1 at 2019-10-03 17:15:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 251ms (Views: 246.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:15:22 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  Rendered api/listings/index.json.jbuilder (8.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/listings/index.json.jbuilder:1:in `_app_views_api_listings_index_json_jbuilder__432139797049933925_70159924882180'
+
+Started GET "/" for ::1 at 2019-10-03 17:15:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 69ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:16:04 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  Rendered api/listings/index.json.jbuilder (4.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/api/listings/index.json.jbuilder:1:in `_app_views_api_listings_index_json_jbuilder__432139797049933925_70159968849920'
+
+Started GET "/" for ::1 at 2019-10-03 17:18:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:18:19 -0400
+
+AbstractController::ActionNotFound - The action 'index' could not be found for Api::ListingsController:
+
+Started GET "/" for ::1 at 2019-10-03 17:19:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 67ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:19:20 -0400
+Processing by Api::ListingsController#index as JSON
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template api/listings/index, application/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Tony/Desktop/castle/app/views"
+:
+  app/controllers/api/listings_controller.rb:7:in `index'
+
+Started GET "/" for ::1 at 2019-10-03 17:20:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:20:16 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (55.3ms)
+Completed 200 OK in 68ms (Views: 49.3ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:29:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 719ms (Views: 717.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:30:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 499ms (Views: 496.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:30:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:30:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 446ms (Views: 442.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:31:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:32:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 89ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:32:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 99ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:34:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 442ms (Views: 440.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:34:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 120ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:34:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 112ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:35:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:35:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:35:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:35:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:36:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 95ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:36:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:36:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:36:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:38:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 505ms (Views: 500.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:39:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 74ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:39:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:39:48 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (21.1ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:48:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 466ms (Views: 463.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:49:14 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 522ms (Views: 517.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:50:12 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 495ms (Views: 491.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 17:50:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 466ms (Views: 459.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 17:50:54 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (18.6ms)
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:02:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 573ms (Views: 570.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:02:41 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.5ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/users" for ::1 at 2019-10-03 18:06:35 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthdate"=>"--"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:6
+Completed 422 Unprocessable Entity in 307ms (Views: 0.3ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:17:30 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (11.4ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:26:48 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 417ms (Views: 412.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:27:13 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 159ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:27:21 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (16.9ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:29:33 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (15.0ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:31:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 371ms (Views: 368.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:31:05 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.4ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:32:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 94ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:32:45 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (18.3ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:34:15 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (14.8ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:41:47 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (18.4ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:48:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2059ms (Views: 2055.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:48:52 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (11.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (24.0ms)
+Completed 200 OK in 41ms (Views: 28.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:49:38 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 92ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:49:38 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (25.7ms)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:49:55 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (20.3ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:49:58 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (12.0ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:49:59 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (8.5ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:00 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.1ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:50:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.5ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:38 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (13.7ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:40 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (10.2ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:41 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:42 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/index.json.jbuilder (19.4ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:43 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (9.8ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:50:44 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (14.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:53:58 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (12.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:54:02 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (11.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:54:07 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (11.2ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/users" for ::1 at 2019-10-03 18:54:30 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthdate"=>"--"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:6
+Completed 422 Unprocessable Entity in 261ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 18:59:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 404ms (Views: 401.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:59:31 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (9.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:59:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.8ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:59:36 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (16.2ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 18:59:54 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.7ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:00:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 108ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:00:07 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.9ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:00:28 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 114ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:00:29 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (20.3ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:00:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:00:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (19.7ms)
+Completed 200 OK in 33ms (Views: 28.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:00:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 113ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:01:05 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (13.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:02:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1852ms (Views: 1848.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:02:37 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.2ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:02:48 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/index.json.jbuilder (14.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:03:24 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.9ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:05:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:05:04 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (18.3ms)
+Completed 200 OK in 30ms (Views: 25.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:16:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:16:40 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (38.1ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:17:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 475ms (Views: 472.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:18:00 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.7ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:18:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 497ms (Views: 491.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:18:30 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/index.json.jbuilder (16.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:19:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:19:25 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (20.0ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:19:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 106ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:19:33 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (29.1ms)
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:19:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:19:56 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (18.3ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:20:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:20:18 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (16.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:20:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:20:31 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (18.7ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:20:35 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:20:36 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (19.1ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:21:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:21:17 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (22.7ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:21:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 77ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:21:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Started GET "/api/listings" for ::1 at 2019-10-03 19:21:40 -0400
+Completed 200 OK in 137ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (8.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (23.8ms)
+Completed 200 OK in 38ms (Views: 29.4ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:22:56 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (11.2ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:23:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 101ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:23:46 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (1.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (22.1ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:24:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:24:23 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (15.7ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:24:37 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 132ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:24:37 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (1.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (17.9ms)
+Completed 200 OK in 46ms (Views: 36.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:24:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:24:49 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.2ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:25:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 88ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:25:21 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (20.5ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:25:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 97ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:25:29 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (17.2ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:25:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:25:37 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (18.2ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:25:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:25:50 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (20.1ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:26:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:26:01 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (2.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (27.6ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:26:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:26:09 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (20.2ms)
+Completed 200 OK in 34ms (Views: 28.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:26:19 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 89ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:26:19 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (26.6ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:26:32 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:26:32 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (18.4ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:27:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:27:28 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (22.6ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:27:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:27:49 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (22.6ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:28:03 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:28:03 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (12.4ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:28:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:28:18 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (19.1ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:28:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 95ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:28:30 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.8ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:28:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 101ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:28:42 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (18.5ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:29:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:29:31 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.8ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:29:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:29:45 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (3.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (20.1ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:30:30 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:30:31 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (22.0ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:30:46 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:30:46 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (18.5ms)
+Completed 200 OK in 33ms (Views: 25.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:31:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 85ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:31:01 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (16.0ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:32:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 99ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:32:57 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (21.6ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:34:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:34:16 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (28.7ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:34:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:34:49 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.9ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:34:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:34:51 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (12.0ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:35:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:35:11 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (15.8ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:35:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 131ms (Views: 127.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:35:46 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.2ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:39:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:39:58 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.2ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:40:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:40:57 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (7.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (23.7ms)
+Completed 200 OK in 35ms (Views: 27.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:41:08 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:41:08 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (17.2ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:42:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 122ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:42:46 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (18.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:44:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 115ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:44:21 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (4.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (51.1ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:48:10 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1600ms (Views: 1595.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:48:12 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (19.4ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:48:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 171ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:48:32 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (17.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (31.0ms)
+Completed 200 OK in 43ms (Views: 25.0ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:49:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 476ms (Views: 471.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:49:16 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (17.6ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:49:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 526ms (Views: 522.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:49:27 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (15.3ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:49:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 473ms (Views: 471.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:49:46 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (16.7ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:52:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 120ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:52:40 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (19.5ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:52:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 174ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:52:54 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/index.json.jbuilder (46.4ms)
+Completed 200 OK in 63ms (Views: 51.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:53:01 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:53:02 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (21.1ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:53:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:53:50 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (3.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (35.4ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:54:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:54:56 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/index.json.jbuilder (21.0ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:55:59 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:56:00 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.8ms)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 19:56:34 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 19:56:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (14.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (31.8ms)
+Completed 200 OK in 44ms (Views: 29.0ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:00:06 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 110.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:00:06 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (13.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (31.3ms)
+Completed 200 OK in 45ms (Views: 30.7ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:00:17 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 108ms (Views: 103.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:00:17 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (20.0ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:00:57 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 118ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:00:57 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (13.1ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:02:29 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:02:29 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (14.6ms)
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:02:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:02:37 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (17.1ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:06:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 954ms (Views: 949.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for ::1 at 2019-10-03 20:06:17 -0400
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]", "first_name"=>"", "last_name"=>"", "birthdate"=>"--"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[36mUser Exists (4.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:6
+Completed 422 Unprocessable Entity in 264ms (Views: 0.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:15:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 497ms (Views: 494.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:15:52 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:15:52 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (17.9ms)
+Completed 200 OK in 33ms (Views: 29.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:17:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:17:05 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (12.8ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:18:01 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (22.5ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:18:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:18:37 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (15.9ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:19:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 143ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:19:00 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (7.4ms)
+  Rendered api/listings/index.json.jbuilder (35.1ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:20:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 717ms (Views: 714.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:20:40 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (3.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (18.4ms)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:20:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 166ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:20:51 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (24.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/index.json.jbuilder (51.0ms)
+Completed 200 OK in 66ms (Views: 40.5ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:21:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:21:19 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (4.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (19.4ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:21:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 95ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:21:33 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (16.6ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:22:49 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:22:50 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (4.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (21.8ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-10-03 20:26:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-03 20:26:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.9ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/index.json.jbuilder (26.6ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 8.8ms)
+
+
