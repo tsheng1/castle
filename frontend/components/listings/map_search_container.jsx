@@ -1,5 +1,5 @@
 import React from 'react';
-import ListingIndex from "./listing_index";
+import MapSearch from '../map/map_search';
 import {connect} from 'react-redux';
 import {fetchListings} from '../../actions/listing_actions';
 
@@ -13,4 +13,4 @@ const mdp = dispatch => ({
   fetchListings: () => dispatch(fetchListings())
 })
 
-export default connect(msp, mdp)(ListingIndex)
+export default connect(msp, mdp)(MapSearch)

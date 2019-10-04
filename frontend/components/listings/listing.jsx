@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import Footer from '../footer/footer';
 import GreetingContainer from '../greeting/greeting_container';
-import ListingIndexContainer from './listing_index_container';
+import MapSearchContainer from '../listings/map_search_container';
 import SearchBar from './search_bar';
 
 const Listing = () => (
@@ -15,7 +15,7 @@ const Listing = () => (
       <SearchBar />
       <GreetingContainer />
     </header>
-    <ListingIndexContainer />
+    <MapSearchContainer />
     <Footer />
   </div>
 

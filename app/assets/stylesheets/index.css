@@ -9,13 +9,25 @@
   display: inline-block;
   text-align: center;
   margin: 10px;
+  margin-right: 2px;
   box-sizing: border-box;
+  font-weight: 300;
+}
+
+.listing-page .header-bar {
+  position: fixed;
+  background-color: #ffffff;
 }
 
 .filter-buttons {
   padding-left: 15px;
   box-sizing: border-box;
   border-bottom: 1px solid #e4e4e4;
+  position: fixed;
+  margin-top: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  display: inline-block;
 }
 
 .list-map {
@@ -23,16 +35,35 @@
 }
 
 .listing-boxes {
-  width: 43.75%;
+  width: 840px;
   padding: 0 24px;
-  padding-top: 33px;
+  padding-top: 12px;
+  margin-top: 132px;
 }
 
-.map {
-  width: 56.25%;
+.search-map {
+  margin-top: 132px;
+  width: 426px;;
+  position: fixed;
+  right: 0;
 }
 
 .list-box {
+  box-sizing: border-box;
   height: 228px;
   list-style: none;
+  padding: 8px 8px 12px;
+  width: 790px;
+  border: 1px solid red;
+  margin-bottom: 22px;
+}
+
+#map-container {
+  box-sizing: border-box;
+  /* width: 100%; */
+  height: 100vh;
+}
+
+.listings-list {
+  padding: 0;
 }

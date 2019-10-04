@@ -20,6 +20,7 @@
   color: #484848;
   padding-left: 10px;
   padding-right: 15px;
+  font-weight: 500;
 }
 
 .listing-page .logout-button:hover, .listing-page .login-signup > button:hover {

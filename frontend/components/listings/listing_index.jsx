@@ -1,5 +1,6 @@
 import React from 'react';
 import ListingIndexItem from './listing_index_item';
+import ListingMap from "../map/listing_map";
 
 class ListingIndex extends React.Component {
   componentDidMount() {
@@ -17,21 +18,10 @@ class ListingIndex extends React.Component {
     }
 
     return (
-      <div>
-        <div className="filter-buttons">
-          <button className="filter-button" >Dates</button>
-          <button className="filter-button" >Guests</button>
-        </div>
-        <div className="list-map">
-          <div className="listing-boxes">
-            <ul>
-              {listings}
-            </ul>
-          </div>
-          <div className="map">
-            {/* map */}
-          </div>
-        </div>
+      <div className="listing-boxes">
+        <ul className="listings-list">
+          {listings}
+        </ul>
       </div>
     )
   }
