@@ -13,7 +13,7 @@ import Splash from './splash/splash';
 const App = () => (
   <div>
     <Modal />
-    <Route exact path="/" component={Splash} />
+    <AuthRoute exact path="/" component={Splash} />
     <Route exact path="/listings" component={Listing} />
   </div>
 );

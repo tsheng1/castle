@@ -1,13 +1,23 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 class Search extends React.Component {
 
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    <Redirect to="/listings" />
+  }
 
 
   render() {
     return (
         <div className="search-form">
-          <form className="search-container">
+          <form className="search-container" onSubmit={this.handleSubmit}>
             <h2>Book unique places to stay.</h2>
             <p>WHERE</p>
             <input type="text" placeholder="Anywhere" className="splash-input-text" />
