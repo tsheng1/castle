@@ -13,7 +13,6 @@ class ListingIndexItem extends React.Component {
   }
 
   getPhoto() {
-    debugger
     const firstPhoto = this.props.listing.pictures[0];
     return (<img src={firstPhoto} className="listing-photo" />)
   }

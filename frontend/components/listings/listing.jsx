@@ -16,7 +16,7 @@ const Listing = () => (
       <GreetingContainer />
     </header>
     <MapSearchContainer />
-    <Footer />
+
   </div>
 
 );
