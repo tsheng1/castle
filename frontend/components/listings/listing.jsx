@@ -16,11 +16,6 @@ const Listing = () => (
       <GreetingContainer />
     </header>
     <MapSearchContainer />
-<<<<<<< HEAD
-    {/* <Footer /> */}
-=======
-
->>>>>>> listings
   </div>
 
 );
