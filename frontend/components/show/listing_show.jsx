@@ -3,32 +3,21 @@ import ShowMap from './show_map';
 import { Route, Link } from 'react-router-dom';
 import GreetingContainer from '../greeting/greeting_container';
 import SearchBar from '../listings/search_bar';
+import Calendar from './calendar';
 
 
 class ListingShow extends React.Component {
+  constructor(props) {
+    super(props); 
+    this.redirectListings = this.redirectListings.bind(this);
+  }
+
   componentDidMount() {
     this.props.fetchListing(this.props.listingId)
+  }
 
-    let scrollpos = window.scrollY;
-    let scrollBox = document.getElementById("root").getElementsByTagName("div")[0].getElementsByClassName("show-body")[0].getElementsByClassName("right-side")[0];
-
-    function add_class_on_scroll() {
-      scrollBox.classList.add("fixed-pos")
-    }
-
-    function remove_class_on_scroll() {
-      scrollBox.classList.remove("fixed-pos")
-    }
-
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
-
-      if (scrollpos > 305) {
-        add_class_on_scroll();
-      } else {
-        remove_class_on_scroll();
-      }
-    })
+  redirectListings() {
+    this.props.history.push('/listings')
   }
 
   render () {
@@ -49,11 +38,10 @@ class ListingShow extends React.Component {
       numBath = "bath"
     }
 
-    debugger
     const firstPhoto = this.props.listing.pictures[0];
     const photos = this.props.listing.pictures.slice(1) || null ;
-    let photoShow = photos.map((photo) => {
-      return (<img src={photo} className="small-show-photos"/>)
+    let photoShow = photos.map((photo, idx) => {
+      return (<img src={photo} key={idx} className="small-show-photos"/>)
     })
 
     return (
@@ -82,6 +70,11 @@ class ListingShow extends React.Component {
             <div className="show-description-container">
               <p className="show-description">{this.props.listing.description}</p>
             </div>
+            <div className="show-calendar-container">
+              <p className="calendar-title">Availability</p>
+              <p className="calendar-text">1 night minimum stay</p>
+              <Calendar listing={this.props.listing}/>
+            </div>
             <div className="show-map-container">
               <ShowMap listing={this.props.listing} />
               <p className="map-text">The map shows this place's specific location</p>
@@ -109,7 +102,3 @@ class ListingShow extends React.Component {
 }
 
 export default ListingShow;
-
-{/* <script type="text/javascript">castle11 = "<%= image_url('castle11.jpg') %>"</script>
-  <script type="text/javascript">castle21 = "<%= image_url('castle21.jpg') %>"</script>
-  <script type="text/javascript">castle31 = "<%= image_url('castle31.jpg') %>"</script> */}

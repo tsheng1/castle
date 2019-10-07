@@ -10,6 +10,7 @@ import Footer from './footer/footer';
 import Listing from './listings/listing';
 import Splash from './splash/splash';
 import ListingShowContainer from './show/listing_show_container';
+import 'react-dates/initialize';
 
 const App = () => (
   <div>
