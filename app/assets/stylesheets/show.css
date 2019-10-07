@@ -76,16 +76,6 @@
   height: 500px;
 }
 
-.first-photo {
-  width: 633px;
-  height: 296px;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-  object-fit: cover;
-  margin-top: -10px;
-}
-
 .show-information {
   margin-top: 50px;
   margin-left: 119px;
@@ -242,6 +232,19 @@
   display: flex;
   margin-top: -10px;
   flex-wrap: wrap;
+  /* overflow: hidden; */
+}
+
+.first-photo {
+  width: 633px;
+  height: 296px;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  object-fit: cover;
+  margin-top: -10px;
+  border: 1px solid #484848;
+  /* transition: transform .2s ease; */
 }
 
 .small-show-photos {
@@ -252,9 +255,15 @@
   image-rendering: crisp-edges;
   image-rendering: pixelated;
   object-fit: cover;
+  border: 1px solid #484848;
+  /* transition: transform .2s ease; */
 }
 
 .listing-show .photo-container {
   display: flex;
   width: 100vw;
+}
+
+.small-show-photos:hover, .first-photo:hover {
+  /* transform:scale(1.1); */
 }

@@ -40939,3 +40939,699 @@ NoMethodError - undefined method `photos' for #<Listing:0x00007f83e7c4f2d0>:
   app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102252909100'
   app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102252909100'
 
+Started GET "/" for ::1 at 2019-10-07 14:40:11 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 621ms (Views: 615.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-10-07 14:40:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 121ms (Views: 115.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:40:16 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (15.3ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:40:17 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (15.3ms)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:40:18 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (18.3ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83eedab488>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102312374620'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102312374620'
+
+Started GET "/" for ::1 at 2019-10-07 14:40:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 98ms (Views: 94.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-07 14:40:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:40:34 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (12.0ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:40:35 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (12.2ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:40:35 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (16.9ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83ee8e7348>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102309875900'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102309875900'
+
+Started GET "/" for ::1 at 2019-10-07 14:41:15 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 112ms (Views: 107.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-07 14:41:18 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:41:20 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (14.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:41:20 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (11.7ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:41:21 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (5.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (15.5ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 5.6ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83eb8489a8>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102251253220'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102251253220'
+
+Started GET "/" for ::1 at 2019-10-07 14:41:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 91ms (Views: 87.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:41:43 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  [1m[36mPicture Load (1.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (2.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (23.8ms)
+Completed 200 OK in 38ms (Views: 31.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:41:43 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (15.5ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:41:44 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  Rendered api/listings/show.json.jbuilder (18.8ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.3ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83eec9e888>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102311823800'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102311823800'
+
+Started GET "/" for ::1 at 2019-10-07 14:41:50 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:41:50 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (1.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (19.5ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:41:50 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (12.8ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:41:51 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (16.9ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83eea940d8>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102310753780'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102310753780'
+
+Started GET "/" for ::1 at 2019-10-07 14:42:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 68ms (Views: 63.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:42:05 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.2ms)
+  [1m[36mPicture Load (1.0ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (32.7ms)
+Completed 200 OK in 51ms (Views: 42.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:42:06 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (20.0ms)
+Completed 200 OK in 31ms (Views: 26.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:42:07 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (16.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83ebe62898>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102287582620'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102287582620'
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:42:09 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.7ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (20.3ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:42:09 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (14.2ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:42:11 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  [1m[36mPicture Load (0.6ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (18.5ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:42:11 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (15.5ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:42:12 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (17.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83ebc25710>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102286400720'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102286400720'
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:42:41 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (5.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (2.1ms)
+  [1m[36mPicture Load (4.0ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (29.4ms)
+Completed 200 OK in 44ms (Views: 33.6ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:42:41 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (1.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (15.2ms)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2019-10-07 14:42:42 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 108ms (Views: 101.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:42:42 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  [1m[36mPicture Load (8.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (32.3ms)
+Completed 200 OK in 44ms (Views: 32.5ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:42:43 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (41.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (5.6ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (13.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (2.1ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (78.2ms)
+Completed 200 OK in 90ms (Views: 26.6ms | ActiveRecord: 62.6ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:42:43 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (2.1ms)
+  Rendered api/listings/show.json.jbuilder (20.5ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83eed99fd0>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102312339140'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102312339140'
+
+Started GET "/" for ::1 at 2019-10-07 14:43:51 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 83ms (Views: 79.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-10-07 14:43:55 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "lINZE1ORxK4Fn6TBjz9itQ"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:43:55 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  [1m[36mPicture Load (1.2ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.5ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (20.5ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:43:55 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  [1m[36mPicture Load (0.6ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (16.1ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings/55" for ::1 at 2019-10-07 14:43:57 -0400
+Processing by Api::ListingsController#show as JSON
+  Parameters: {"id"=>"55"}
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:15
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (13.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.7ms)
+
+
+
+NoMethodError - undefined method `photos' for #<Listing:0x00007f83ee0c4710>:
+  app/views/api/listings/show.json.jbuilder:3:in `block in _app_views_api_listings_show_json_jbuilder__2579412028117001005_70102305536560'
+  app/views/api/listings/show.json.jbuilder:1:in `_app_views_api_listings_show_json_jbuilder__2579412028117001005_70102305536560'
+
+Started GET "/api/listings" for ::1 at 2019-10-07 14:44:03 -0400
+Processing by Api::ListingsController#index as JSON
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (6.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (1.0ms)
+  [1m[36mPicture Load (9.8ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (11.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.4ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (47.9ms)
+Completed 200 OK in 61ms (Views: 32.6ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/api/listings?bounds%5BnorthEast%5D%5Blat%5D=40.79901460268226&bounds%5BnorthEast%5D%5Blng%5D=-73.9433545572586&bounds%5BsouthWest%5D%5Blat%5D=40.70824841921406&bounds%5BsouthWest%5D%5Blng%5D=-74.01805944274139" for ::1 at 2019-10-07 14:44:03 -0400
+Processing by Api::ListingsController#index as JSON
+  Parameters: {"bounds"=>{"northEast"=>{"lat"=>"40.79901460268226", "lng"=>"-73.9433545572586"}, "southWest"=>{"lat"=>"40.70824841921406", "lng"=>"-74.01805944274139"}}}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" WHERE (lat < '40.79901460268226') AND (lat > '40.70824841921406') AND (lng > '-74.01805944274139') AND (lng < '-73.9433545572586')[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  [1m[36mPicture Load (0.3ms)[0m  [1m[34mSELECT "pictures".* FROM "pictures" WHERE "pictures"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ app/views/api/listings/index.json.jbuilder:4
+  Rendered api/listings/index.json.jbuilder (11.3ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 1.4ms)
+
+
