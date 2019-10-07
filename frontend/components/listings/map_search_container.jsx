@@ -1,5 +1,6 @@
 import React from 'react';
 import MapSearch from '../map/map_search';
+import { withRouter } from 'react-router-dom';
 import {connect} from 'react-redux';
 import {fetchListings} from '../../actions/listing_actions';
 import {updateBounds} from '../../actions/filter_actions';
@@ -15,4 +16,4 @@ const mdp = dispatch => ({
   updateBounds: bounds => dispatch(updateBounds(bounds))
 })
 
-export default connect(msp, mdp)(MapSearch)
+export default withRouter(connect(msp, mdp)(MapSearch));

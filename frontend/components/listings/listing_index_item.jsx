@@ -1,6 +1,30 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class ListingIndexItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.getPhoto = this.getPhoto.bind(this);
+  }
+
+  handleClick() {
+    this.props.history.push(`/listings/${this.props.listing.id}`)
+  }
+
+  getPhoto() {
+    const firstPhoto = this.props.listing.photos[0];
+    switch (firstPhoto) {
+      case "castle11.jpg":
+        return <img src={castle11} className="listing-photo" />;
+      case "castle21.jpg":
+        return <img src={castle21} className="listing-photo" />;
+      case "castle31.jpg":
+        return <img src={castle31} className="listing-photo" />;
+      default:
+        return null;
+    }
+  }
 
   render() {
     
@@ -21,8 +45,10 @@ class ListingIndexItem extends React.Component {
       numBath = "bath"
     }
 
+    
+
     return(
-      <div className="list-box">
+      <div className="list-box" onClick={this.handleClick}>
         <li className="list-box-text" >
           <p className="list-location">{this.props.listing.location}</p>
           <p className="list-home-type">{this.props.listing.home_type}</p>
@@ -33,10 +59,12 @@ class ListingIndexItem extends React.Component {
           </div>
         </li>
 
-        {/* <div>Image here</div> */}
+        <div className="photo-container">
+          {this.getPhoto()}
+        </div>
       </div>
     )
   }
 }
 
-export default ListingIndexItem;
+export default withRouter(ListingIndexItem);

@@ -83,6 +83,22 @@ class SessionForm extends React.Component {
     const lastErr = "Last name can't be blank";
     const passErr = "Password is too short (minimum is 6 characters)";
 
+    const yearsArr = [];
+    const daysArr = [];
+    for (let i = 2019; i >= 1899; i--) {
+      yearsArr.push(i);
+    }
+    for (let i = 1; i <= 31; i++) {
+      daysArr.push(i);
+    }
+    const years = yearsArr.map(year => {
+      return (<option key={year} value={year}>{year}</option>)
+    })
+    
+    const days = daysArr.map(day => {
+      return (<option key={day} value={day}>{day}</option>)
+    })
+    
     let otherPath;
     let oppForm;
     let text;
@@ -102,7 +118,7 @@ class SessionForm extends React.Component {
         <p className={`error-message${this.errorClass(firstErr)}`}>{this.errorExist(lastErr)}</p>
       </div>);
 
-      dateSel = (
+dateSel = (
         <div>
           <p className="birthday">Birthday</p>
           <p className="birthday-text">To sign up, you need to be at least 18. Other people who use Castle won't see your birthday.</p>
@@ -142,21 +158,6 @@ class SessionForm extends React.Component {
         passPlaceholder = "Password"
     }
 
-    const yearsArr = [];
-    const daysArr = [];
-    for (let i = 2019; i >= 1899; i--) {
-      yearsArr.push(i);
-    }
-    for (let i = 1; i <= 31; i++) {
-      daysArr.push(i);
-    }
-    const years = yearsArr.map(year => {
-      return (<option key={year} value={year}>{year}</option>)
-    })
-
-    const days = daysArr.map(day => {
-      return (<option key={day} value={day}>{day}</option>)
-    })
 
     
     return (

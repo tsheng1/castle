@@ -16,6 +16,7 @@ class ListingIndex extends React.Component {
         )
       })
     }
+    
 
     return (
       <div className="listing-boxes">

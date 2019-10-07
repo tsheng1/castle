@@ -15,14 +15,6 @@ export default class MarkerManager {
     Object.keys(this.markers).filter(listingId => !listingsObj[listingId]).forEach((listingId) => this.removeMarker(this.markers[listingId]))
   }
 
-  // updateMarkers(listings) {
-  //   debugger
-
-  //   let filteredListings = listings.filter(listing => !this.markers[listing.id])
-  //   debugger
-  //   filteredListings.forEach(listing => this.createMarkerFromListing(listing));
-  // }
-
   createMarkerFromListing(listing) {
     const pos = new google.maps.LatLng(listing.lat, listing.lng);
     const marker = new google.maps.Marker({

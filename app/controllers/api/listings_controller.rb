@@ -27,7 +27,9 @@ class Api::ListingsController < ApplicationController
       :num_bed,
       :num_bath,
       :max_guests,
-      :home_type
+      :home_type,
+      :photos,
+      photos: [],
     )
   end
 

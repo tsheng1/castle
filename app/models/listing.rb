@@ -1,4 +1,17 @@
 class Listing < ApplicationRecord
+
+  validates :title,
+      :description,
+      :price,
+      :location,
+      :lng,
+      :lat,
+      :num_bed,
+      :num_bath,
+      :max_guests,
+      :home_type,
+      :photos, presence: true
+
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])
       .where("lat > ?", bounds[:southWest][:lat])
