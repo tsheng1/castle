@@ -35,15 +35,17 @@
 }
 
 .listing-boxes {
-  width: 840px;
+  width: 66vw;
   padding: 0 24px;
-  padding-top: 12px;
+  padding-top: 0px;
   margin-top: 132px;
+  padding-right: 400px;
 }
 
 .search-map {
   margin-top: 132px;
-  width: 426px;;
+  /* width: 426px;; */
+  width: 34vw;
   position: fixed;
   right: 0;
 }
@@ -52,10 +54,14 @@
   box-sizing: border-box;
   height: 228px;
   list-style: none;
-  padding: 8px 8px 12px;
-  width: 790px;
-  border: 1px solid red;
+  padding: 0px 2px 0px;
+  /* width: 790px; */
+  width: 61.5vw;
+  border-bottom: 1px solid #dce0e0;
   margin-bottom: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 #map-container {
@@ -64,6 +70,55 @@
   height: 100vh;
 }
 
+.list-box-text {
+  margin: 0;
+  padding: 0;
+}
+
 .listings-list {
   padding: 0;
+}
+
+.list-location, .list-details {
+  font-size: 14px;
+  /* margin-top: 32px; */
+  font-weight: 300;
+  color: #919191;
+}
+
+.list-home-type, .list-title {
+  margin: 4px 0;
+  font-size: 18px;
+  color: #222222;
+  font-weight: 300;
+}
+
+.list-price-div {
+  display: flex;
+}
+
+.list-price {
+  margin-top: 54px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list-price-text {
+  margin-top: 54px;
+  margin-left: 7px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.photo-container {
+  border-radius: 4px;
+  margin-top: 10px;
+  height: 200px;
+  width: 300px;
+}
+
+.listing-photo {
+  height: 200px;
+  width: 300px;
+  border-radius: 4px;
 }

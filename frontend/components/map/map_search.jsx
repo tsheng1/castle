@@ -2,7 +2,7 @@ import React from 'react';
 import ListingMap from './listing_map';
 import ListingIndex from '../listings/listing_index'
 
-const MapSearch = ({listings, fetchListings}) => (
+const MapSearch = ({listings, fetchListings, updateBounds, bounds}) => (
   <div className="index-page">
     <div className="filter-buttons">
       <button className="filter-button" >Dates</button>
@@ -13,7 +13,7 @@ const MapSearch = ({listings, fetchListings}) => (
         <ListingIndex listings={listings} fetchListings={fetchListings} />
 
       <div className="search-map">
-        <ListingMap listings={listings} />
+        <ListingMap listings={listings} updateBounds={updateBounds} />
       </div>
     </div>
   </div>

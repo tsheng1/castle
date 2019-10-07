@@ -1,0 +1,269 @@
+.listing-show > .header-bar {
+  display: flex;
+  height: 80px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.listing-show .logout-button, .listing-show .login-signup {
+  margin-left: auto;
+  padding-right: 10px;
+}
+
+.listing-show .logout-button, .listing-show .login-signup > button {
+  border: none;
+  background: none;
+  height: 100%;
+  font-size: 14px;
+  color: #484848;
+  padding-left: 10px;
+  padding-right: 15px;
+  font-weight: 500;
+}
+
+.listing-show .logout-button:hover, .listing-show .login-signup > button:hover {
+  border-bottom: 2px solid #484848;
+  cursor: pointer;
+}
+
+.header-link {
+  height: 100%;
+  width: 80px;
+}
+
+.listing-show .logo {
+  height: 34px;
+  width: 38px;
+  display: block;
+  margin: 26px;
+  margin-left: 25px;
+}
+
+.search-bar {
+  background-color: #ffffff;
+  color: #484848;
+  border: 1px solid #EBEBEB;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: 48px;
+  width: 460px;
+  box-sizing: border-box;
+  outline: none;
+  margin: 16px;
+  font-size: 17px;
+  font-weight: 600;
+  padding-left: 50px;
+  margin-left: 0px;
+}
+
+.search-bar:hover {
+  transition: box-shadow 200ms ease-in;
+  box-shadow: 2px 4px 4px rgba(0,0,0,0.1);
+}
+
+.search-bar::placeholder {
+  color: #484848;
+}
+
+.show-map {
+  width: 500px;
+  height: 500px;
+}
+
+.show-map-container {
+  width: 500px;
+  height: 500px;
+}
+
+.show-information {
+  margin-top: 50px;
+  margin-left: 119px;
+  padding-top: 30px;
+  color: #484848;
+  border-bottom: 1px solid #e4e4e4;
+  width: 602px;
+  padding-bottom: 30px;
+}
+
+.show-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.show-location {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.show-home-type {
+  margin: 0;
+  margin-top: 22px;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.show-guests {
+  margin: 0;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 25px;
+  font-weight: 300;
+}
+
+.show-description-container {
+  margin-left: 119px;
+  width: 602px;
+  min-height: 275px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.show-description {
+  margin: 0;
+  margin-top: 44px;
+  /* margin-left: 119px; */
+  font-size: 16px;
+  font-weight: 300;
+  color: #484848;
+}
+
+.show-map-container {
+  margin-left: 119px;
+  margin-top: 30px;
+  width: 600px;
+  height: 350px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 30px;
+}
+
+.show-body {
+  display: flex;
+}
+
+.map-text {
+  color: #484848;
+  font-size: 16px;
+}
+
+.show-map {
+  height: 350px;
+}
+
+.box-price {
+  font-size: 22px;
+  font-weight: 700;
+  display: inline;
+}
+
+.box-per-night {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 6px;
+  display: inline;
+}
+
+.box-text {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.box-check-dates {
+  margin-top: 0;
+  height: 44px;
+  width: 325px;
+  font-size: 16px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box-dropdown {
+  height: 44px;
+  width: 325px;
+  font-size: 16px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.box-submit {
+  padding: 10px 22px;
+  background-color: rgb(255, 90, 95);
+  border-radius: 4px;
+  font-weight: 700;
+  width: 326px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+.box-bottom-text {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.right-side {
+  height: 355px;
+  width: 375px;
+  border: 1px solid #e4e4e4;
+  color: #484848;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-top: 110px;
+}
+
+.fixed-pos {
+  /* margin-right: 730px; */
+  position: fixed;
+  top: -14px;
+  right: 134px;
+  /* right: -596px; */
+  /* bottom: 0; */
+}
+
+.all-photos {
+  display: flex;
+  margin-top: -10px;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+}
+
+.first-photo {
+  width: 633px;
+  height: 296px;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  object-fit: cover;
+  margin-top: -10px;
+  border: 1px solid #484848;
+  /* transition: transform .2s ease; */
+}
+
+.small-show-photos {
+  width: 315px;
+  height: 148px;
+  box-sizing: border-box;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  object-fit: cover;
+  border: 1px solid #484848;
+  /* transition: transform .2s ease; */
+}
+
+.listing-show .photo-container {
+  display: flex;
+  width: 100vw;
+}
+
+.small-show-photos:hover, .first-photo:hover {
+  /* transform:scale(1.1); */
+}

@@ -9,12 +9,14 @@ import Search from './splash/search';
 import Footer from './footer/footer';
 import Listing from './listings/listing';
 import Splash from './splash/splash';
+import ListingShowContainer from './show/listing_show_container';
 
 const App = () => (
   <div>
     <Modal />
     <AuthRoute exact path="/" component={Splash} />
     <Route exact path="/listings" component={Listing} />
+    <Route path="/listings/:listingId" component={ListingShowContainer} />
   </div>
 );
 
