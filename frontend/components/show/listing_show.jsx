@@ -49,25 +49,24 @@ class ListingShow extends React.Component {
       numBath = "bath"
     }
 
-    const firstPhoto = this.props.listing.photos[0].split(".")[0];
-    const photos = this.props.listing.photos.slice(1) || null ;
-    let photoURL;
+    debugger
+    const firstPhoto = this.props.listing.pictures[0];
+    const photos = this.props.listing.pictures.slice(1) || null ;
     let photoShow = photos.map((photo) => {
-      photoURL = photo.split(".")[0];
-      return (<img src={eval(photoURL)} />)
+      return (<img src={photo} className="small-show-photos"/>)
     })
 
     return (
       <div className="listing-show">
         <header className="header-bar">
-          <Link to="/" className="header-link" listing={this.props.listing} >
+          <Link to="/listings" className="header-link" listing={this.props.listing} >
             <img src={window.logo_red} className="logo" />
           </Link>
           <SearchBar />
           <GreetingContainer />
         </header>
         <div className="photo-container">
-          <img src={eval(firstPhoto)} className="first-photo"/>
+          <img src={firstPhoto} className="first-photo"/>
           <div className="all-photos">  
             {photoShow}
           </div>
@@ -110,3 +109,7 @@ class ListingShow extends React.Component {
 }
 
 export default ListingShow;
+
+{/* <script type="text/javascript">castle11 = "<%= image_url('castle11.jpg') %>"</script>
+  <script type="text/javascript">castle21 = "<%= image_url('castle21.jpg') %>"</script>
+  <script type="text/javascript">castle31 = "<%= image_url('castle31.jpg') %>"</script> */}

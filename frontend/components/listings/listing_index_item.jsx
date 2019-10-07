@@ -13,37 +13,34 @@ class ListingIndexItem extends React.Component {
   }
 
   getPhoto() {
-    const firstPhoto = this.props.listing.photos[0];
-    switch (firstPhoto) {
-      case "castle11.jpg":
-        return <img src={castle11} className="listing-photo" />;
-      case "castle21.jpg":
-        return <img src={castle21} className="listing-photo" />;
-      case "castle31.jpg":
-        return <img src={castle31} className="listing-photo" />;
-      default:
-        return null;
-    }
+    debugger
+    const firstPhoto = this.props.listing.pictures[0];
+    return (<img src={firstPhoto} className="listing-photo" />)
   }
 
   render() {
     
     let numGuests, numBed, numBath
-    if (this.props.listing.max_guests > 1) {
-      numGuests = "guests"
-    } else {
-      numGuests = "guest"
-    }
-    if (this.props.listing.num_bed > 1) {
-      numBed = "bedrooms"
-    } else {
-      numBed = "bedroom"
-    }
-    if (this.props.listing.num_bath > 1) {
-      numBath = "baths"
-    } else {
-      numBath = "bath"
-    }
+    numGuests = (this.props.listing.max_guests) > 1 ? "guests" : "guest";
+    numBed = (this.props.listing.num_bed) > 1 ? "bedrooms" : "bedroom";
+    numBath = (this.props.listing.num_bath) > 1 ? "baths" : "bath";
+
+
+    // if (this.props.listing.max_guests > 1) {
+    //   numGuests = "guests"
+    // } else {
+    //   numGuests = "guest"
+    // }
+    // if (this.props.listing.num_bed > 1) {
+    //   numBed = "bedrooms"
+    // } else {
+    //   numBed = "bedroom"
+    // }
+    // if (this.props.listing.num_bath > 1) {
+    //   numBath = "baths"
+    // } else {
+    //   numBath = "bath"
+    // }
 
     
 

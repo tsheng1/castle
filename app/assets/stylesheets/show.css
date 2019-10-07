@@ -78,7 +78,7 @@
 
 .first-photo {
   width: 633px;
-  height: 295px;
+  height: 296px;
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
@@ -164,11 +164,6 @@
   height: 350px;
 }
 
-
-.show-body .photo-container {
-  display: flex;
-}
-
 .box-price {
   font-size: 22px;
   font-weight: 700;
@@ -235,9 +230,31 @@
 }
 
 .fixed-pos {
-  margin-right: 722px;
+  /* margin-right: 730px; */
   position: fixed;
-  top: 0;
-  right: -604px;
-  bottom: 0;
+  top: -14px;
+  right: 134px;
+  /* right: -596px; */
+  /* bottom: 0; */
+}
+
+.all-photos {
+  display: flex;
+  margin-top: -10px;
+  flex-wrap: wrap;
+}
+
+.small-show-photos {
+  width: 315px;
+  height: 148px;
+  box-sizing: border-box;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  object-fit: cover;
+}
+
+.listing-show .photo-container {
+  display: flex;
+  width: 100vw;
 }
