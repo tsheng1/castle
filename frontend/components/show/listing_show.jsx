@@ -4,46 +4,95 @@ import { Route, Link } from 'react-router-dom';
 import GreetingContainer from '../greeting/greeting_container';
 import SearchBar from '../listings/search_bar';
 import Calendar from './calendar';
+import BookingContainer from './booking_container';
 
 
 class ListingShow extends React.Component {
   constructor(props) {
     super(props); 
+    this.state = {
+      listing: this.props.listing,
+    }
     this.redirectListings = this.redirectListings.bind(this);
+    this.onHover = this.onHover.bind(this);
+    this.offHover = this.offHover.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchListing(this.props.listingId)
   }
 
+  onHover(selected) {
+    let arr = ["0", "1", "2", "3", "4"];
+    delete arr[selected];
+    arr.map(el => {
+      document.getElementById(el).classList.add("gray-photo")
+    })
+  }
+
+  offHover(){
+    let arr = ["0", "1", "2", "3", "4"];
+    arr.map(el => {
+      document.getElementById(el).classList.remove("gray-photo")
+    })
+  }
+
+  // componentDidUpdate() {
+  //   this.props.fetchListing(this.props.listing.id)
+  // }
+
   redirectListings() {
     this.props.history.push('/listings')
   }
 
   render () {
+    if (this.props.listing === undefined) {
+      return null;
+    }
+
     let numGuests, numBed, numBath
-    if (this.props.listing.max_guests > 1) {
-      numGuests = "guests"
-    } else {
-      numGuests = "guest"
-    }
-    if (this.props.listing.num_bed > 1) {
-      numBed = "bedrooms"
-    } else {
-      numBed = "bedroom"
-    }
-    if (this.props.listing.num_bath > 1) {
-      numBath = "baths"
-    } else {
-      numBath = "bath"
-    }
+    numGuests = (this.props.listing.max_guests) > 1 ? "guests" : "guest";
+    numBed = (this.props.listing.num_bed) > 1 ? "bedrooms" : "bedroom";
+    numBath = (this.props.listing.num_bath) > 1 ? "baths" : "bath";
 
     const firstPhoto = this.props.listing.pictures[0];
     const photos = this.props.listing.pictures.slice(1) || null ;
     let photoShow = photos.map((photo, idx) => {
-      return (<img src={photo} key={idx} className="small-show-photos"/>)
+      return (<div className="small-photo-ind-container"><img src={photo} key={idx} id={`${idx}`} className="small-show-photos" onMouseEnter={() => this.onHover(idx)} onMouseLeave={this.offHover}/></div>)
+    });
+    let amens = this.props.listing.amenities;
+    let amenShow = amens.map((el, idx) => {
+      let key;
+      switch (el) {
+        case "Wifi":
+          key = window.wifi;
+          break;
+        case "TV":
+          key = window.tv;
+          break;
+        case "Fireplace":
+          key = window.fireplace;
+          break;
+        case "Gym":
+          key = window.gym;
+          break;
+        case "Kitchen":
+          key = window.kitchen;
+          break;
+        case "Air conditioning":
+          key = window.ac;
+          break;
+        default:
+          break;
+      }
+      return (
+        <div className="text-plus-icon">
+          <img src={key} key={`amenitiy`+idx} className="amen-icon"/> 
+          <p className="icon-text">{el}</p>
+        </div>
+      )
     })
-
+    
     return (
       <div className="listing-show">
         <header className="header-bar">
@@ -54,7 +103,7 @@ class ListingShow extends React.Component {
           <GreetingContainer />
         </header>
         <div className="photo-container">
-          <img src={firstPhoto} className="first-photo"/>
+          <div className="first-photo-container"><img src={firstPhoto} id='4' className="first-photo" onMouseEnter={() => this.onHover(4)} onMouseLeave={this.offHover} /></div>
           <div className="all-photos">  
             {photoShow}
           </div>
@@ -70,30 +119,39 @@ class ListingShow extends React.Component {
             <div className="show-description-container">
               <p className="show-description">{this.props.listing.description}</p>
             </div>
+            <div className="amenities-container">
+              <p className="amenities-header">Amenities</p>
+              {amenShow}
+            </div>
             <div className="show-calendar-container">
               <p className="calendar-title">Availability</p>
               <p className="calendar-text">1 night minimum stay</p>
               <Calendar listing={this.props.listing}/>
             </div>
+
+            <div className="reviews-container">
+              <div className="reviews-header">
+                <h2>Reviews</h2>
+                <div className="review-search-container"><input readOnly type="text" value="Search reviews" className="reviews-search" /></div>
+              </div>
+              <div className="reviews">
+
+              </div>
+            </div>
+
             <div className="show-map-container">
               <ShowMap listing={this.props.listing} />
               <p className="map-text">The map shows this place's specific location</p>
             </div>
+
+            {/* <div className="host-container">
+              <h2>Hosted by {this.props.listing.host}</h2>
+            </div> */}
+
           </div>
 
           <div className="right-side">
-            <form action="">
-              <div>
-                <p className="box-price">${this.props.listing.price}</p><p className="box-per-night">per night</p>
-              </div>
-
-              <p className="box-text">Dates</p>
-              <input className="box-check-dates" type="text" placeholder="Check-in        Check-out"/>
-              <p className="box-text">Guests</p>
-              <input type="text" placeholder="1 guest" className="box-dropdown" />
-              <input type="submit" value="Reserve" className="box-submit" />
-              <p className="box-bottom-text">You won't be charged yet</p>
-            </form>
+            <BookingContainer listing={this.props.listing}/>
           </div>
         </div>
       </div>

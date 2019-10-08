@@ -13,38 +13,26 @@ class ListingIndexItem extends React.Component {
   }
 
   getPhoto() {
-    const firstPhoto = this.props.listing.pictures[0];
-    return (<img src={firstPhoto} className="listing-photo" />)
+    if (this.props.listing !== undefined) {
+      const firstPhoto = this.props.listing.pictures[0];
+      return (<img src={firstPhoto} className="listing-photo" />)
+    } else {
+      return null;
+    }
   }
 
   render() {
     
     let numGuests, numBed, numBath
-    numGuests = (this.props.listing.max_guests) > 1 ? "guests" : "guest";
-    numBed = (this.props.listing.num_bed) > 1 ? "bedrooms" : "bedroom";
-    numBath = (this.props.listing.num_bath) > 1 ? "baths" : "bath";
+    if (this.props.listing) {
+      numGuests = (this.props.listing.max_guests) > 1 ? "guests" : "guest";
+      numBed = (this.props.listing.num_bed) > 1 ? "bedrooms" : "bedroom";
+      numBath = (this.props.listing.num_bath) > 1 ? "baths" : "bath";
+    }
 
-
-    // if (this.props.listing.max_guests > 1) {
-    //   numGuests = "guests"
-    // } else {
-    //   numGuests = "guest"
-    // }
-    // if (this.props.listing.num_bed > 1) {
-    //   numBed = "bedrooms"
-    // } else {
-    //   numBed = "bedroom"
-    // }
-    // if (this.props.listing.num_bath > 1) {
-    //   numBath = "baths"
-    // } else {
-    //   numBath = "bath"
-    // }
-
-    
-
-    return(
-      <div className="list-box" onClick={this.handleClick}>
+    let item
+    if (this.props.listing) {
+      item = (
         <li className="list-box-text" >
           <p className="list-location">{this.props.listing.location}</p>
           <p className="list-home-type">{this.props.listing.home_type}</p>
@@ -54,7 +42,14 @@ class ListingIndexItem extends React.Component {
             <p className="list-price">${ this.props.listing.price } </p> <p className="list-price-text">/ night</p>
           </div>
         </li>
+      )
+    } else {
+      item = null;
+    }
 
+    return(
+      <div className="list-box" onClick={this.handleClick}>
+        {item}
         <div className="photo-container">
           {this.getPhoto()}
             {/* <div id="carousel" className="carousel-slide" data-ride="carousel">

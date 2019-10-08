@@ -5,7 +5,7 @@ import ListingShow from './listing_show';
 
 const msp = (state, ownProps) => {
   const listingId = ownProps.match.params.listingId;
-  const listing = state.entities.listings[ownProps.match.params.listingId]
+  const listing = state.entities.listings[ownProps.match.params.listingId];
   return {
     listingId,
     listing
@@ -13,7 +13,8 @@ const msp = (state, ownProps) => {
 };
 
 const mdp = dispatch => ({
-  fetchListing: id => dispatch(fetchListing(id))
+  fetchListing: id => dispatch(fetchListing(id)),
+  fetchListings: () => dispatch(fetchListings())
 });
 
 export default connect(msp, mdp)(ListingShow);

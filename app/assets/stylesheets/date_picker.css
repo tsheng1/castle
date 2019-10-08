@@ -883,3 +883,19 @@
   width: 15px;
   fill: #cacccd
 }
+
+.form-box {
+  position: relative;
+  display: inline-block;
+}
+
+.show-cal {
+  display: block;
+  z-index: 10;
+  position: absolute;
+}
+
+.hide-cal {
+  display: none;
+  position: absolute;
+}

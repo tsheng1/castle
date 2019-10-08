@@ -10,10 +10,11 @@ User.destroy_all
 Listing.destroy_all
 
 User.create!(email: "demo123@castle.com", first_name: "Castle", last_name: "Demo", password: "password", birthdate: Date.parse("1995-12-12"))
+User.create!(email: "castlehosting@castle.com", first_name: "Castle Hosting", last_name: "NYC", password: "password", birthdate: Date.parse("1995-12-12"), description: "Host description goes here")
 
-Listing.create!(title: "Modern Apartment", description: "Nice apartment", price: "250", location:"Manhattan", lng: -73.975807, lat: 40.758675, num_bed: 2, num_bath: 1, max_guests: 4, home_type: "Entire Apartment")
-Listing.create!(title: "Unique Studio Apartment", description: "Okay apartment", price: "150", location:"Manhattan", lng: -74.007688, lat: 40.715847, num_bed: 1, num_bath: 1, max_guests: 2, home_type: "Studio")
-Listing.create!(title: "Large Brownstone", description: "Okay brownstone", price: "200", location:"Manhattan", lng: -73.962620, lat: 40.771419, num_bed: 3, num_bath: 2, max_guests: 5, home_type: "Entire Apartment")
+Listing.create!(title: "Modern Apartment", description: "Nice apartment", price: "250", location:"Manhattan", lng: -73.975807, lat: 40.758675, num_bed: 2, num_bath: 1, max_guests: 4, home_type: "Entire Apartment", amenities: ["Wifi", "TV", "Fireplace", "Gym"], host_id: User.second.id)
+Listing.create!(title: "Unique Studio Apartment", description: "Okay apartment", price: "150", location:"Manhattan", lng: -74.007688, lat: 40.715847, num_bed: 1, num_bath: 1, max_guests: 2, home_type: "Studio", amenities: ["Wifi", "TV", "Kitchen", "Gym"], host_id: User.second.id)
+Listing.create!(title: "Large Brownstone", description: "Okay brownstone", price: "200", location:"Manhattan", lng: -73.962620, lat: 40.771419, num_bed: 3, num_bath: 2, max_guests: 5, home_type: "Entire Apartment", amenities: ["Wifi", "TV", "Air conditioning", "Kitchen"], host_id: User.second.id)
 
 Picture.create!(listing_id: Listing.first.id, url: "https://castle-aa-dev.s3.amazonaws.com/TogXpbnYtumkkF4BgCYkHyBf")
 Picture.create!(listing_id: Listing.first.id, url: "https://castle-aa-dev.s3.amazonaws.com/tzPARWNnEKmjayQhNjFc8Ycu")

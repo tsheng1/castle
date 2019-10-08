@@ -10,6 +10,14 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token
 
+  has_many :bookings,
+    foreign_key: :user_id,
+    class_name: :Booking
+
+  has_many :listings,
+    foreign_key: :host_id,
+    class_name: :Listing
+
   def validate_birthdate
     if !self.birthdate || Date.today.ago(18.year) < self.birthdate
       errors.add(:base, "To sign up, you must be 18 or older.")

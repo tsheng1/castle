@@ -15,10 +15,12 @@ const receiveListing = listing => ({
 
 export const fetchListings = (bounds) => dispatch => {
   return ListingAPIUtil.fetchListings(bounds).then(listings => {
-    dispatch(receiveListings(listings))
+    return (dispatch(receiveListings(listings)))
   })
 }
 
 export const fetchListing = id => dispatch => (
-  ListingAPIUtil.fetchListing(id).then(listing => dispatch(receiveListing(listing)))
+  ListingAPIUtil.fetchListing(id).then(listing => {
+    return (dispatch(receiveListing(listing)))
+  })
 )

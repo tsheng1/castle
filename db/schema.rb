@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_07_161057) do
+ActiveRecord::Schema.define(version: 2019_10_08_204309) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,16 @@ ActiveRecord::Schema.define(version: 2019_10_07_161057) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+  create_table "bookings", force: :cascade do |t|
+    t.integer "listing_id", null: false
+    t.integer "user_id", null: false
+    t.date "start_date", null: false
+    t.date "end_date", null: false
+    t.integer "num_guests", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "listings", force: :cascade do |t|
     t.string "title", null: false
     t.text "description", null: false
@@ -49,6 +59,8 @@ ActiveRecord::Schema.define(version: 2019_10_07_161057) do
     t.string "home_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "amenities", default: [], array: true
+    t.integer "host_id"
   end
 
   create_table "pictures", force: :cascade do |t|
@@ -67,6 +79,7 @@ ActiveRecord::Schema.define(version: 2019_10_07_161057) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "birthdate"
+    t.text "description"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
   end
