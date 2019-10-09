@@ -13,6 +13,8 @@ class Booking extends React.Component {
     }
     this.openCalendar = this.openCalendar.bind(this);
     this.closeCalendar = this.closeCalendar.bind(this);
+    this.guestOpen = this.guestOpen.bind(this)
+    this.guestClose = this.guestClose.bind(this)
   }
 
   openCalendar() {
@@ -24,6 +26,32 @@ class Booking extends React.Component {
   closeCalendar() {
     document.getElementById("calendar-dropdown").classList.remove("show-cal")
     document.getElementById("calendar-dropdown").classList.add("hide-cal")
+  }
+
+  // guestOpen(){
+  //   document.getElementById("guest-dropdown").classList.remove("hide-guest")
+  //   document.getElementById("guest-dropdown").classList.add("show-guest")
+  // }
+
+  // guestClose(){
+  //   document.getElementById("guest-dropdown").classList.remove("show-guest")
+  //   document.getElementById("guest-dropdown").classList.add("hide-guest")
+  // }
+
+  guestOpen() {
+    this.setState({ guestsActive: !this.state.guestsActive, calendarActive: false }, () => this.changeListener());
+  }
+
+  guestClose() {
+    this.setState({ guestsActive: false }, () => this.changeListener());
+  }
+
+  changeListener() {
+    if (!this.state.guestsActive) {
+      document.removeEventListener('click', this.guestClose);
+    } else {
+      document.addEventListener('click', this.guestOpen, false);
+    }
   }
 
   render() {
@@ -42,8 +70,12 @@ class Booking extends React.Component {
             <p className="box-text">Dates</p>
             <input className="box-check-in-dates" value={startDateString} type="text" placeholder="Check-in" onClick={this.openCalendar} readOnly />
             <input className="box-check-out-dates" value={endDateString} type="text" placeholder="→  Check-out" onClick={this.openCalendar} readOnly/>
+            
             <p className="box-text">Guests</p>
-            <input type="text" placeholder="1 guest" className="box-dropdown" />
+            <input readOnly type="number" value={this.state.guests} placeholder="1 guest" onClick={this.guestOpen} id="guest-dropdown" />
+            <div className={this.state.guestsActive ? "hide-guest" : "show-guest"}>
+            </div>
+
             <input type="submit" value="Reserve" className="box-submit" />
             <p className="box-bottom-text">You won't be charged yet</p>
           </form>

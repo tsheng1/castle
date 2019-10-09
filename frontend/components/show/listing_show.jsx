@@ -50,6 +50,8 @@ class ListingShow extends React.Component {
       return null;
     }
 
+    let host = this.props.listing.host;
+
     let numGuests, numBed, numBath
     numGuests = (this.props.listing.max_guests) > 1 ? "guests" : "guest";
     numBed = (this.props.listing.num_bed) > 1 ? "bedrooms" : "bedroom";
@@ -139,14 +141,16 @@ class ListingShow extends React.Component {
               </div>
             </div>
 
-            <div className="show-map-container">
-              <ShowMap listing={this.props.listing} />
-              <p className="map-text">The map shows this place's specific location</p>
+            <div className="host-container">
+              <h2>Hosted by {host.first_name}</h2>
+              <p>{host.description}</p>
             </div>
 
-            {/* <div className="host-container">
-              <h2>Hosted by {this.props.listing.host}</h2>
-            </div> */}
+            <div className="show-map-container">
+              <h2>The neighborhood</h2>
+              <ShowMap listing={this.props.listing} />
+              <p className="map-text">The map shows this castle's specific location</p>
+            </div>
 
           </div>
 
