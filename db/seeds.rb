@@ -16,6 +16,10 @@ Listing.create!(title: "Modern Apartment", description: "Nice apartment", price:
 Listing.create!(title: "Unique Studio Apartment", description: "Okay apartment", price: "150", location:"Manhattan", lng: -74.007688, lat: 40.715847, num_bed: 1, num_bath: 1, max_guests: 2, home_type: "Studio", amenities: ["Wifi", "TV", "Kitchen", "Gym"], host_id: User.second.id)
 Listing.create!(title: "Large Brownstone", description: "Okay brownstone", price: "200", location:"Manhattan", lng: -73.962620, lat: 40.771419, num_bed: 3, num_bath: 2, max_guests: 5, home_type: "Entire Apartment", amenities: ["Wifi", "TV", "Air conditioning", "Kitchen"], host_id: User.second.id)
 
+Booking.create!(listing_id: Listing.first.id, user_id: User.first.id, start_date: Date.parse("2019-12-12"), end_date: Date.parse("2019-12-16"), num_guests: 2)
+Booking.create!(listing_id: Listing.second.id, user_id: User.first.id, start_date: Date.parse("2019-07-31"), end_date: Date.parse("2019-8-02"), num_guests: 2)
+Booking.create!(listing_id: Listing.third.id, user_id: User.first.id, start_date: Date.parse("2019-02-20"), end_date: Date.parse("2019-2-25"), num_guests: 2)
+
 Picture.create!(listing_id: Listing.first.id, url: "https://castle-aa-dev.s3.amazonaws.com/TogXpbnYtumkkF4BgCYkHyBf")
 Picture.create!(listing_id: Listing.first.id, url: "https://castle-aa-dev.s3.amazonaws.com/tzPARWNnEKmjayQhNjFc8Ycu")
 Picture.create!(listing_id: Listing.first.id, url: "https://castle-aa-dev.s3.amazonaws.com/2gkYiiyeH75CPvc5viHBRpyf")

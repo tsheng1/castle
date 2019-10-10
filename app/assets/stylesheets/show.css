@@ -397,6 +397,7 @@
   position: absolute;
   height: 300px;
   width: 330px;
+  background-color: red;
 }
 
 .hide-guest {

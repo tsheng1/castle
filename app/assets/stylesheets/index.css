@@ -12,6 +12,7 @@
   margin-right: 2px;
   box-sizing: border-box;
   font-weight: 300;
+  z-index: 0;
 }
 
 .listing-page .header-bar {
@@ -28,6 +29,7 @@
   width: 100%;
   background-color: #ffffff;
   display: inline-block;
+  z-index: 10;
 }
 
 .list-map {
@@ -121,4 +123,8 @@
   height: 200px;
   width: 300px;
   border-radius: 4px;
+}
+
+.listing-page {
+  position: relative;
 }

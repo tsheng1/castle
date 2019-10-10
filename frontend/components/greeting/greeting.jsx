@@ -1,23 +1,65 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout, openModal }) => {
+class Greeting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.newLinks = this.newLinks.bind(this);
+    this.personalGreeting = this.personalGreeting.bind(this);
+    this.toggleClass = this.toggleClass.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.redirectBookings = this.redirectBookings.bind(this);
+  }
   
-  const newLinks = () => (
-    <nav className="login-signup">
-      <button onClick={() => openModal('signup')}>Sign up</button>
-      <button onClick={() => openModal('login')}>Log in</button>
-    </nav>
-  );
+  redirectBookings() {
+    this.props.history.replace('/bookings')
+  }
 
-  const personalGreeting = () => (
-      <button className="logout-button" onClick={logout}>Log Out</button>
-  );
+  newLinks() {
+    return (
+      <nav className="login-signup">
+        <button onClick={() => this.props.openModal('signup')}>Sign up</button>
+        <button onClick={() => this.props.openModal('login')}>Log in</button>
+      </nav>
+    )
+  };
 
-  return (
-    currentUser ? personalGreeting(currentUser, logout) : newLinks()
-  )
+  personalGreeting() {
+    return (
+      <div className="dropdown-container">
+        <div className="profile-pic-container"></div>
+        <button onClick={this.toggleClass} className="drop-button"><img src={window.pawn} className="profile-pic"/></button>
+        
+        <div id="user-dropdown" className="dropdown-content">
+          <button className="bookings-button" onClick={this.redirectBookings}>Bookings</button>
+          <button className="logout-button" onClick={this.props.logout}>Log Out</button>
+        </div>
+      </div>
+    )
+  };
+
+  toggleClass() {
+    document.getElementById("user-dropdown").classList.toggle("show-user-dropdown");
+  }
+
+  handleClick (e) {
+    if (!e.target.matches('drop-button')) {
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show-user-dropdown')) {
+          openDropdown.classList.remove('show-user-dropdown')
+        }
+      }
+    }
+  }
+
+  render() {
+    return (
+      this.props.currentUser ? this.personalGreeting(this.props.currentUser, this.props.logout) : this.newLinks()
+    )
+  }
 }
 
 
-export default Greeting;
+export default withRouter(Greeting);

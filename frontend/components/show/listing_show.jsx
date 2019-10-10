@@ -61,7 +61,7 @@ class ListingShow extends React.Component {
     const firstPhoto = this.props.listing.pictures[0];
     const photos = this.props.listing.pictures.slice(1) || null ;
     let photoShow = photos.map((photo, idx) => {
-      return (<div className="small-photo-ind-container"><img src={photo} key={idx} id={`${idx}`} className="small-show-photos" onMouseEnter={() => this.onHover(idx)} onMouseLeave={this.offHover}/></div>)
+      return (<div className="small-photo-ind-container" key={photo+idx}><img src={photo} key={idx} id={`${idx}`} className="small-show-photos" onMouseEnter={() => this.onHover(idx)} onMouseLeave={this.offHover}/></div>)
     });
     let amens = this.props.listing.amenities;
     let amenShow = amens.map((el, idx) => {

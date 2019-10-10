@@ -16,7 +16,7 @@
   overflow: visible;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer
+  cursor: pointer;
 }
 .PresetDateRangePicker_button:active {
   outline: 0
@@ -889,13 +889,19 @@
   display: inline-block;
 }
 
-.show-cal {
+.hide-cal {
   display: block;
-  z-index: 10;
+  visibility: hidden;
   position: absolute;
 }
 
-.hide-cal {
-  display: none;
+.show-cal {
+  display: block;
+  visibility: visible;
+  z-index: 1;
   position: absolute;
+  top: 108px;
+  width: 326px;
+  background-color: white;
 }
+

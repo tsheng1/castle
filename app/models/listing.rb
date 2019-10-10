@@ -30,4 +30,18 @@ class Listing < ApplicationRecord
       .where("lng > ?", bounds[:southWest][:lng])
       .where("lng < ?", bounds[:northEast][:lng])
   end
+
+  def booked_dates
+    arr = []
+    self.bookings.each do |booking|
+      curr_date = booking.start_date
+      end_date = booking.end_date
+      while curr_date <= end_date
+        arr << curr_date
+        curr_date += 1
+      end
+    end
+
+    arr
+  end
 end

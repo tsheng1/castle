@@ -62,7 +62,9 @@ class SessionForm extends React.Component {
   }
 
   errorExist(error) {
-    if (this.props.errors.includes(error)) {
+    if (this.props.errors === undefined) {
+      return null;
+    } else if (this.props.errors.includes(error)) {
       return error;
     };
   };

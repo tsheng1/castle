@@ -1,11 +1,17 @@
 import Booking from './booking';
 import moment from 'moment';
 import {connect} from 'react-redux';
+import {createBooking} from '../../actions/booking_actions';
 
 const msp = (state, ownProps) => {
-  let listing = ownProps.listing;
-  let bookings = listing.bookings ? listing.bookings : [];
-  return {bookings}
+  const listing = ownProps.listing;
+  let bookings = Object.values(listing.bookings);
+  let currentUserId = state.session.id;
+  return {bookings, currentUserId}
 }
 
-export default connect(msp)(Booking)
+const mdp = dispatch => ({
+  createBooking: booking => dispatch(createBooking(booking))
+})
+
+export default connect(msp, mdp)(Booking)
