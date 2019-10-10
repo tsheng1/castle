@@ -31,14 +31,16 @@ class Booking extends React.Component {
     this.setState({calShow: false})
   }
 
-  removeGuest() {
+  removeGuest(event) {
+    event.preventDefault();
     if (this.state.guests > 1) {
       let newGuests = this.state.guests - 1
       this.setState({guests: newGuests})
     }
   }
   
-  addGuest() {
+  addGuest(event) {
+    event.preventDefault();
     debugger
     if (this.state.guests <= this.props.listing.max_guests) {
       let newGuests = this.state.guests + 1;
@@ -46,7 +48,8 @@ class Booking extends React.Component {
     }
   }
   
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault();
     debugger
     if (this.validDate()) {
       this.props.createBooking({
@@ -55,9 +58,7 @@ class Booking extends React.Component {
         num_guests: this.state.guests,
         start_date: this.state.startDate.format('YYYY-MM-DD'),
         end_date: this.state.endDate.format('YYYY-MM-DD'),
-      })
-      debugger
-      this.props.history.replace(`/bookings`);
+      }).then(() => this.props.history.replace(`/bookings`));
     } else {
       console.log("not gr8")
     }
@@ -87,6 +88,7 @@ class Booking extends React.Component {
     dropdown.classList.toggle("guest-dropdown-show")
 
     window.onClick = function (e) {
+      e.preventDefault();
       if (!e.target.matches(".guest-dropdown-container") && !e.target.matches(".guest-dropdown-content") && !e.target.matches(".buttons")) {
         let dropdowns = document.getElementsByClassName("guest-dropdown-content")[0];
         if (dropdowns.classList.contains('guest-dropdown-show')) {
@@ -135,16 +137,16 @@ class Booking extends React.Component {
               <p className="guest-text-box-text">{guest}</p>
             </div>
     
-            <input type="submit" value="Reserve" className="box-submit" />
+            <button type="submit" className="box-submit">Reserve</button>
             <p className="box-bottom-text">You won't be charged yet</p>
           </form>
 
         </div>
           <div id="guest-dropdown-content" className="guest-dropdown-content">
             <p>Guests</p>
-            <button id="remove-guest" onClick={this.removeGuest} className="remove-guest-light">-</button>
+            <button type="button " id="remove-guest" onClick={this.removeGuest} className="remove-guest-light">-</button>
             <p>{this.state.guests}</p>
-            <button id="add-guest" onClick={this.addGuest}>+</button>
+            <button type="button " id="add-guest" onClick={this.addGuest}>+</button>
             <p className="max-guest-text">{`${this.props.listing.max_guests} guests maximum. Infants don't count towards number of guests.`}</p>
           </div>
 
