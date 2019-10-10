@@ -10,13 +10,7 @@ const bookingsReducer = (state = {}, action) => {
     case RECEIVE_BOOKINGS:
       return Object.assign({}, state, action.bookings);
     case RECEIVE_BOOKING:
-      let newBooking
-      debugger
-      if (action.booking.id !== undefined) {
-        newBooking = { [action.booking.id]: action.booking }
-      } else {
-        newBooking = {}
-      }
+      const newBooking = { [action.booking.id]: action.booking }
       return Object.assign({}, state, newBooking)
     case RECEIVE_BOOKING_ERRORS:
       return action.errors[0].responseJSON;

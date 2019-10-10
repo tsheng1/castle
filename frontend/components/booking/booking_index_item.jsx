@@ -14,7 +14,7 @@ class BookingIndexItem extends React.Component {
   }
 
   getPhoto() {
-    if (this.props.booking.listing.photoUrls !== undefined) {
+    if (this.props.booking.listing !== undefined && this.props.booking.listing.photoUrls !== undefined) {
       const photo = this.props.booking.listing.photoUrls[0];
       return (<img src={photo} className="booking-photo" />)
     }
@@ -40,6 +40,10 @@ class BookingIndexItem extends React.Component {
   }
 
   render() {
+
+    if (this.props.booking.listing === undefined) {
+      return null;
+    }
     
     const endDate = new Date(this.props.booking.end_date);
     const endDateY = endDate.getUTCFullYear();

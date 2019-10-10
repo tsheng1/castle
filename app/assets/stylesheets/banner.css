@@ -148,3 +148,25 @@
   margin-top: 20px;
   margin-left: 6.5px;
 }
+
+.logout-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+  cursor: pointer;
+  z-index: 999;
+  width: 268px;
+  color: #767676;
+  text-align: left;
+  background: none;
+  background-color: white;
+  border-bottom: 1px solid #EBEBEB;
+  margin-left: 20px;
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: 500;
+}

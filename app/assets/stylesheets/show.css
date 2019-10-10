@@ -103,6 +103,7 @@
   margin-top: 5px;
   margin-left: 25px;
   font-weight: 300;
+  
 }
 
 .show-description-container {
@@ -171,11 +172,25 @@
 .box-check-in-dates, .box-check-out-dates {
   margin-top: 0;
   height: 44px;
-  width: 162px;
+  /* width: 162px; */
   font-size: 16px;
   padding: 15px;
   box-sizing: border-box;
   color: #484848;
+}
+
+.box-check-out-dates {
+  width: 202px;
+  border-style: none;
+  border: 1px solid #EBEBEB;
+  border-left: none;
+}
+
+.box-check-in-dates {
+  width: 122px;
+  border-style: none;
+  border: 1px solid #EBEBEB;
+  border-right: none;
 }
 
 .box-dropdown {
@@ -391,13 +406,45 @@
   padding-top: 65px;
 }
 
-.show-guest {
-  display: block;
-  z-index: 10;
+#remove-guest, #add-guest {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+
+#remove-guest {
+  margin-left: 125px;
+  margin-right: 25px;
+}
+
+.remove-guest-light{
+  border: 1px solid #b7dadb;
+  color: #b7dadb;
+}
+
+.remove-guest-outline {
+  border: 1px solid rgb(0, 132, 137);
+  color: rgb(0, 132, 137);
+}
+
+#add-guest {
+  margin-left: 25px;
+  border: 1px solid rgb(0, 132, 137);
+  color: rgb(0, 132, 137);
+}
+
+.max-guest-text {
   position: absolute;
-  height: 300px;
-  width: 330px;
-  background-color: red;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.guest-dropdown:focus {
+  border-bottom: 2px solid #007a87;
 }
 
 .hide-guest {
@@ -430,3 +477,58 @@
   margin-top: 0;
   color: #484848;
 }
+
+#guest-dropdown {
+  border-style: none;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
+  padding: 8px;
+  border-color: rgb(235, 235, 235);
+  width: 298px;
+  height: 22px;
+  font-size: 17px;
+  color: rgb(72, 72, 72);
+  padding-left: 15px;
+  margin-bottom: 55px;
+}
+
+.guest-text-box-text {
+  position: absolute;
+  font-size: 17px;
+  color: rgb(72, 72, 72);
+  margin: 0;
+  top: 37px;
+  left: 30px;
+}
+
+.guest-dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.guest-dropdown-content{
+  display: none;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  height: 300px;
+  width: 323px;
+  background-color: white;
+  top: 165px;
+  height: 150px;
+  border-radius: 3px;
+  box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500; 
+}
+
+.guest-dropdown-show {
+  display: block;
+  display: flex;
+}
+
+
