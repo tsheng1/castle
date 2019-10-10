@@ -532,4 +532,9 @@
   display: flex;
 }
 
+.host-image {
+  width: 30px;
+  height: 30px;
+
+}
 

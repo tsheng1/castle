@@ -143,6 +143,7 @@ class ListingShow extends React.Component {
             </div>
 
             <div className="host-container">
+              <img src={window.crown} className="host-image"/>
               <h2>Hosted by {hostFirst}</h2>
               <p>{hostDesc}</p>
             </div>

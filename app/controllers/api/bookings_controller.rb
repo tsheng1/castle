@@ -9,7 +9,6 @@ class Api::BookingsController < ApplicationController
 
     @booking.user_id = current_user.id
     if @booking.save
-      debugger
       render json: @booking
     else
       render json: @booking.errors.full_messages, status: 422
