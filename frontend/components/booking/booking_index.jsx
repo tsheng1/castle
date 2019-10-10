@@ -55,12 +55,16 @@ class BookingIndex extends React.Component {
           <SearchBar />
           <GreetingContainer />
         </header>
-        <div className="prev-booking-container">
-          {userPrevBookings}
-        </div>
+        <div className="bookings-body">
+          <h2>Upcoming plans</h2>
+          <div className="future-booking-container">
+            {userFutureBookings}
+          </div>
 
-        <div className="future-booking-container">
-          {userFutureBookings}
+          <h2 className="prev-booking-header">Where you've been</h2>
+          <div className="prev-booking-container">
+            {userPrevBookings}
+          </div>
         </div>
       </div>
     )

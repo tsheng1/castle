@@ -46,8 +46,6 @@ class BookingIndexItem extends React.Component {
     const endDateMNum = endDate.getMonth();
     const endDateM = this.numToMonth(endDateMNum);
 
-    debugger
-
     return(
       <div className="booking-index-item">
         {this.getPhoto()}

@@ -27,15 +27,15 @@ const removeBooking = bookingId => ({
 })
 
 export const fetchBookings = () => dispatch => (
-  BookingApiUtil.fetchBookings().then((bookings) => dispatch(receiveBookings(bookings)), (errors) => dispatch(receiveErrors(errors)))
+  BookingApiUtil.fetchBookings().then((bookings) => dispatch(receiveBookings(bookings)))
 )
 
 export const fetchBooking = id => dispatch => (
-  BookingApiUtil.fetchBooking(id).then((booking) => dispatch(receiveBooking(booking)), (errors) => dispatch(receiveErrors(errors)))
+  BookingApiUtil.fetchBooking(id).then((booking) => dispatch(receiveBooking(booking)))
 )
 
 export const createBooking = booking => dispatch => (
-  BookingApiUtil.createBooking(booking).then((booking) => dispatch(receiveBooking(booking)), (errors) => dispatch(receiveErrors(errors)))
+  BookingApiUtil.createBooking(booking).then((booking) => dispatch(receiveBooking(booking)))
 )
 
 export const deleteBooking = bookingId => dispatch => (
