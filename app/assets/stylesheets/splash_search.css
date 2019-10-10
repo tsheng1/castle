@@ -6,6 +6,8 @@
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
   color: #484848;
   box-sizing: border-box;
+  position: relative;
+  display: inline-block;
 }
 
 .search-container {
@@ -42,8 +44,9 @@
   width: 188.5px;
 }
 
-.splash-input {
-  width: 375px;;
+.splash-guest {
+  box-sizing: border-box;
+  width: 376px;
   height: 50px;
   font-size: 17px;
   font-weight: 400;
@@ -57,7 +60,24 @@
 
 
 .splash-input-text {
-  width: 350px;;
+  width: 350px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  border: 1px solid #EBEBEB;
+  color: #484848;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+}
+
+.splash-cal-container {
+  display: flex;
+}
+
+.splash-input-text-cal {
+  box-sizing: border-box;
+  width: 188px;
   height: 50px;
   font-size: 17px;
   font-weight: 400;
@@ -68,7 +88,7 @@
   border-radius: 4px;
 }
 
-.splash-input-text:focus {
+.splash-input-text:focus, .splash-input-text-cal:focus, .splash-guest:focus {
   outline: none;
   box-shadow: 0 0 0 1px #007a87; 
 }
@@ -99,3 +119,100 @@
   position: relative;
 }
 
+.form-box {
+  position: relative;
+  display: inline-block;
+}
+
+.show-cal-splash {
+  display: block;
+  visibility: visible;
+  z-index: 1;
+  position: absolute;
+  top: 245px;
+  left: 33px;
+  width: 326px;
+  background-color: white;
+} 
+
+.hide-cal-splash {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+}
+
+.guest-dropdown-container-splash {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.guest-dropdown-content-splash {
+  display: none;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  height: 300px;
+  width: 373px;
+  background-color: white;
+  top: 330px;
+  left: 33px;
+  height: 103px;
+  border-radius: 3px;
+  box-shadow:rgba(0, 0, 0, 0.15) 0px 2px 6px, rgba(0, 0, 0, 0.07) 0px 0px 0px 1px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 29px;
+}
+
+.guest-dropdown-show-splash {
+  display: block;
+  display: flex;
+}
+
+#guest-dropdown-splash {
+  box-sizing: border-box;
+  border-style: none;
+  border: 1px solid #EBEBEB;
+  border-radius: 2px;
+  padding: 8px;
+  border-color: rgb(235, 235, 235);
+  width: 376px;
+  height: 50px;
+  font-size: 17px;
+  color: rgb(72, 72, 72);
+  padding-left: 15px;
+  margin-bottom: 55px;
+  cursor: pointer;
+}
+
+#remove-guest-splash, #add-guest-splash {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  
+  cursor: pointer;
+}
+
+#remove-guest-splash {
+  margin-left: 125px;
+  margin-right: 25px;
+}
+
+.remove-guest-light-splash {
+  border: 1px solid #b7dadb;
+  color: #b7dadb;
+}
+
+.remove-guest-outline-splash {
+  border: 1px solid rgb(0, 132, 137);
+  color: rgb(0, 132, 137);
+}
+
+#add-guest-splash {
+  margin-left: 25px;
+  border: 1px solid rgb(0, 132, 137);
+  color: rgb(0, 132, 137);
+}
