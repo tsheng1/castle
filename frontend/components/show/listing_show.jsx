@@ -116,6 +116,7 @@ class ListingShow extends React.Component {
             <div className="show-information">
               <p className="show-title">{this.props.listing.title}</p>
               <p className="show-location">{this.props.listing.location}</p>
+              <img src={window.house} className="house-icon"/>
               <p className="show-home-type">{this.props.listing.home_type}</p>
               <p className="show-guests">{this.props.listing.max_guests} {numGuests}  {this.props.listing.num_bed} {numBed}  {this.props.listing.num_bath} {numBath} </p>
             </div>
@@ -138,13 +139,15 @@ class ListingShow extends React.Component {
                 <div className="review-search-container"><input readOnly type="text" value="Search reviews" className="reviews-search" /></div>
               </div>
               <div className="reviews">
-
+                <p className="reviews-body">No reviews (yet)</p>
               </div>
             </div>
 
             <div className="host-container">
-              <img src={window.crown} className="host-image"/>
-              <h2>Hosted by {hostFirst}</h2>
+              <div className="host-flex">
+                <h2>Hosted by {hostFirst}</h2>
+                <img src={window.crown} className="host-image"/>
+              </div>
               <p>{hostDesc}</p>
             </div>
 

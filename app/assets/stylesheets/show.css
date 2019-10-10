@@ -67,8 +67,8 @@
 }
 
 .show-information {
-  margin-top: 50px;
-  margin-left: 119px;
+  margin-top: 0px;
+  margin-left: 90px;
   padding-top: 30px;
   color: #484848;
   border-bottom: 1px solid #e4e4e4;
@@ -79,7 +79,7 @@
 .show-title {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .show-location {
@@ -93,8 +93,9 @@
   margin: 0;
   margin-top: 22px;
   margin-left: 25px;
+  margin-bottom: 5px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .show-guests {
@@ -107,23 +108,24 @@
 }
 
 .show-description-container {
-  margin-left: 119px;
+  margin-left: 90px;
   width: 602px;
-  min-height: 275px;
+  padding-bottom: 100px;
   border-bottom: 1px solid #e4e4e4;
 }
 
 .show-description {
   margin: 0;
   margin-top: 44px;
-  /* margin-left: 119px; */
+  /* margin-left: 90px; */
   font-size: 16px;
   font-weight: 300;
   color: #484848;
+  line-height: 1.5em;
 }
 
 .show-map-container {
-  margin-left: 119px;
+  margin-left: 90px;
   margin-top: 30px;
   width: 600px;
   min-height: 400px;
@@ -226,10 +228,10 @@
   color: #484848;
   padding: 25px;
   box-sizing: border-box;
-  margin-left: 50px;
-  margin-top: 110px;
+  margin-left: 0px;
+  margin-top: 30px;
   position: sticky;
-  top: 100px;
+  top: 75px;
 }
 
 
@@ -277,7 +279,7 @@
 }
 
 .show-calendar-container {
-  margin-left: 95px;
+  margin-left: 66px;
   margin-top: 30px;
   width: 616px;
   min-height: 315px;
@@ -322,7 +324,7 @@
 }
 
 .amenities-container {
-  margin-left: 119px;
+  margin-left: 90px;
   display: flex;
   flex-wrap: wrap;
   width: 604px;
@@ -360,9 +362,9 @@
 }
 
 .reviews-container {
-  margin-left: 119px;
+  margin-left: 90px;
   width: 604px;
-  min-height: 400px;
+  min-height: 300px;
   border-top: 1px solid #e4e4e4;
   margin-top: 40px;
   padding: 15px 0;
@@ -397,8 +399,8 @@
 }
 
 .reviews {
-  width: 100%;
   border-top: 1px solid #e4e4e4;
+  margin: 0 20px;
 }
 
 .review-search-container {
@@ -455,8 +457,8 @@
 
 .host-container {
   min-height: 300px;
-  width: 302px;
-  margin-left: 119px;
+  width: 607px;
+  margin-left: 90px;
   border-top: 1px solid #e4e4e4;
   color: #484848;
 }
@@ -464,12 +466,14 @@
 .host-container h2 {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 40px;
 }
 
 .host-container p {
   font-size: 16px;
   font-weight: 300;
   margin-top: 30px;
+  line-height: 1.5em;
 }
 
 .show-map-container h2 {
@@ -533,8 +537,29 @@
 }
 
 .host-image {
-  width: 30px;
-  height: 30px;
-
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 20px;
+  right: 25px;
 }
 
+.host-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews-body {
+  margin-top: 41px;
+  font-weight: 600;
+  color: #484848;
+}
+
+.house-icon {
+  height: 12px;
+  width: 12px;
+  position: relative;
+  top: 40px;
+  left: 3px;
+}
