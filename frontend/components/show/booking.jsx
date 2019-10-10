@@ -41,7 +41,6 @@ class Booking extends React.Component {
   
   addGuest(event) {
     event.preventDefault();
-    debugger
     if (this.state.guests <= this.props.listing.max_guests) {
       let newGuests = this.state.guests + 1;
       this.setState({ guests: newGuests });
@@ -50,7 +49,6 @@ class Booking extends React.Component {
   
   handleSubmit(e) {
     e.preventDefault();
-    debugger
     if (this.validDate()) {
       this.props.createBooking({
         user_id: this.props.currentUserId,
@@ -60,7 +58,7 @@ class Booking extends React.Component {
         end_date: this.state.endDate.format('YYYY-MM-DD'),
       }).then(() => this.props.history.replace(`/bookings`));
     } else {
-      console.log("not gr8")
+      
     }
   }
 
