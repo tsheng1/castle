@@ -1,4 +1,4 @@
-![alt text](https://github.com/tsheng1/castle/blob/master/app/assets/images/logo_red.png)
+![alt text](https://github.com/tsheng1/castle/blob/master/app/assets/images/logo_red_copy.png)
 # Castle
 
 ---
