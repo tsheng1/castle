@@ -2,7 +2,6 @@
 # Castle
 
 ## [Castle live](https://castle-tsheng.herokuapp.com)
-
 #### Castle is a single page AirBnB clone with a number of features.
 
 ## Technologies
