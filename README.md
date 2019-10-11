@@ -36,7 +36,16 @@ Users are able to sign up, log in, and log out securely. Sign up and log in form
 
 ### Listings Page
 
-The listings page allows users to browse available listings. There is also a map that shows filtered listings, which update when the map location is changed.
+The listings page allows users to browse available listings. There is also a map that shows filtered listings, which updates when the map location is changed. Markers are created and destroyed based on the map bounds given by the api.
+
+```javascript
+updateMarkers(listings) {
+  const listingsObj = {};
+  listings.forEach(listing => listingsObj[listing.id] = listing);
+  listings.filter(listing => !this.markers[listing.id]).forEach(listing => this.createMarkerFromListing(listing))
+  Object.keys(this.markers).filter(listingId => !listingsObj[listingId]).forEach((listingId) => this.removeMarker(this.markers[listingId]))
+}
+```
 
 ![](https://github.com/tsheng1/castle/blob/master/app/assets/images/map-gif.gif)
 

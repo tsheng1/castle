@@ -9,9 +9,7 @@ export default class MarkerManager {
   updateMarkers(listings) {
     const listingsObj = {};
     listings.forEach(listing => listingsObj[listing.id] = listing);
-
     listings.filter(listing => !this.markers[listing.id]).forEach(listing => this.createMarkerFromListing(listing))
-
     Object.keys(this.markers).filter(listingId => !listingsObj[listingId]).forEach((listingId) => this.removeMarker(this.markers[listingId]))
   }
 
@@ -34,7 +32,6 @@ export default class MarkerManager {
         origin: new google.maps.Point(0, 0),
         labelOrigin: new google.maps.Point(27, 19),
         backgroundColor: "white",
-        // labelOrigin: new google.maps.Point(32, 20),
       }
     });
 
