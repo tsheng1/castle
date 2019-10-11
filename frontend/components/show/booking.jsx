@@ -61,25 +61,39 @@ class Booking extends React.Component {
       
     }
   }
-
+  
   validDate() {
+    if (this.state.startDate === null) {return false};
     let tripArr = [];
     let start = this.state.startDate;
-    if (this.state.startDate === null) {return false};
-    
     while (start.isBefore(this.state.endDate)) {
       tripArr.push(start.format('YYYY-MM-DD'));
       start = start.add(1, 'day')
     }
     const bookedDates = this.props.listing.booked_dates;
-    let val = true;
+    let valid = true;
     tripArr.forEach(date => {
       if (bookedDates.includes(date)) {
-        val = false;
+        valid = false;
       }
     }) 
-    return val;
+    return valid;
   }
+
+  // validDate() {
+  // if (this.state.startDate === null) { return false };
+  //   let tripArr = [];
+  //   let startDate = this.state.startDate;
+  //   const bookedDates = this.props.listing.booked_dates;
+  //   while (startDate.isBefore(this.state.endDate)) {
+  //     if (bookedDates.includes(startDate.format('YYYY-MM-DD')) {
+  //       return false;
+  //     }
+  //     startDate = startDate.add(1, 'day')
+  //   };
+
+  //   return true;
+  // }
 
   toggleGuest() {
     let dropdown = document.getElementById("guest-dropdown-content")
