@@ -7,12 +7,12 @@
   border-bottom: 1px solid #e4e4e4;
 }
 
-.listing-show .logout-button, .listing-show .login-signup {
+.listing-show .login-signup {
   margin-left: auto;
   padding-right: 10px;
 }
 
-.listing-show .logout-button, .listing-show .login-signup > button {
+.listing-show .login-signup > button {
   border: none;
   background: none;
   height: 100%;

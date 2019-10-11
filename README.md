@@ -1,14 +1,11 @@
 ![alt text](https://github.com/tsheng1/castle/blob/master/app/assets/images/logo_red_copy.png)
 # Castle
 
----
+## [Castle live](https://castle-tsheng.herokuapp.com)
+#### Castle is a single page AirBnB clone with a number of features.
 
-### [Castle live](https://castle-tsheng.herokuapp.com)
-
-Castle is a single page AirBnB clone with a number of features.
----
 ## Technologies
----
+
 #### Backend
 
 + Ruby
@@ -30,18 +27,20 @@ Castle is a single page AirBnB clone with a number of features.
 
 
 ## Key Features
----
 ### User Authentication
 
 Users are able to sign up, log in, and log out securely. Sign up and log in forms appear as a modal, and have the proper error messages when fields are missing or incorrect.
+![](https://github.com/tsheng1/castle/blob/master/app/assets/images/login-gif.gif)
 
 ### Listings Page
 
 The listings page allows users to browse available listings. There is also a map that shows filtered listings, which update when the map location is changed.
+![](https://github.com/tsheng1/castle/blob/master/app/assets/images/map-gif.gif)
 
 ### Show Page
 
-The show page for each listing shows additional information about the property, along with a sticky form to make a booking. Users can select their desired dates and number of guests in order to create a reservation.
+The show page for each listing shows additional information about the property, including pictures and a description. There is also a sticky form where users can select their desired dates and number of guests in order to create a reservation.
+![](https://github.com/tsheng1/castle/blob/master/app/assets/images/show-gif.gif)
 
 ### Bookings
 

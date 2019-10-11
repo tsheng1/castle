@@ -5,8 +5,11 @@ import {createBooking} from '../../actions/booking_actions';
 
 const msp = (state, ownProps) => {
   const listing = ownProps.listing;
-  let bookings = Object.values(listing.bookings);
-  let currentUserId = state.session.id;
+  let bookings
+  if (listing.bookings) {
+    bookings = Object.values(listing.bookings); 
+  }
+    let currentUserId = state.session.id;
   return {bookings, currentUserId}
 }
 
