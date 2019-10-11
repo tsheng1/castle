@@ -1,4 +1,4 @@
-![alt text](https://github.com/tsheng1/castle/blob/master/app/assets/images/logo.png "Castle")
+![alt text](https://github.com/tsheng1/castle/blob/master/app/assets/images/logo_red.png)
 # Castle
 
 ---
@@ -6,12 +6,9 @@
 ### [Castle live](https://castle-tsheng.herokuapp.com)
 
 Castle is a single page AirBnB clone with a number of features.
-
 ---
-
 ## Technologies
 ---
-
 #### Backend
 
 + Ruby
@@ -34,7 +31,6 @@ Castle is a single page AirBnB clone with a number of features.
 
 ## Key Features
 ---
-
 ### User Authentication
 
 Users are able to sign up, log in, and log out securely. Sign up and log in forms appear as a modal, and have the proper error messages when fields are missing or incorrect.
