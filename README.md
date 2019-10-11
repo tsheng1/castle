@@ -30,16 +30,19 @@
 ### User Authentication
 
 Users are able to sign up, log in, and log out securely. Sign up and log in forms appear as a modal, and have the proper error messages when fields are missing or incorrect.
+
 ![](https://github.com/tsheng1/castle/blob/master/app/assets/images/login-gif.gif)
 
 ### Listings Page
 
 The listings page allows users to browse available listings. There is also a map that shows filtered listings, which update when the map location is changed.
+
 ![](https://github.com/tsheng1/castle/blob/master/app/assets/images/map-gif.gif)
 
 ### Show Page
 
 The show page for each listing shows additional information about the property, including pictures and a description. There is also a sticky form where users can select their desired dates and number of guests in order to create a reservation.
+
 ![](https://github.com/tsheng1/castle/blob/master/app/assets/images/show-gif.gif)
 
 ### Bookings
@@ -60,3 +63,11 @@ validDate() {
   return true;
 }
 ```
+
+### Upcoming Features
+
+Upcoming features include
+
++ Search functionality by location, availability, number of guests, type of home, and price
++ Reviews for listings
++ Messaging between users and listing hosts
