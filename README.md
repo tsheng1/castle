@@ -43,7 +43,11 @@ updateMarkers(listings) {
   const listingsObj = {};
   listings.forEach(listing => listingsObj[listing.id] = listing);
   listings.filter(listing => !this.markers[listing.id]).forEach(listing => this.createMarkerFromListing(listing))
-  Object.keys(this.markers).filter(listingId => !listingsObj[listingId]).forEach((listingId) => this.removeMarker(this.markers[listingId]))
+  Object.keys(this.markers).filter(listingId => {
+    return (!listingsObj[listingId]).forEach((listingId) => {
+      return (this.removeMarker(this.markers[listingId]))))
+    }
+  }
 }
 ```
 
