@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWodQTyzR5pGyg3r5SQYJ5oa0KGrPzc" %>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_BWodQTyzR5pGyg3r5SQYJ5oa0KGrPzc&libraries=places"></script>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= favicon_link_tag asset_path('favicon.png') %>

@@ -3,7 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import Footer from '../footer/footer';
 import GreetingContainer from '../greeting/greeting_container';
 import MapSearchContainer from '../listings/map_search_container';
-import SearchBar from './search_bar';
+import Search from '../search/search';
 
 const Listing = () => (
 
@@ -12,7 +12,7 @@ const Listing = () => (
       <Link to="/" className="header-link">
         <img src={window.logo_red} className="logo" />
       </Link>
-      <SearchBar />
+      <Search />
       <GreetingContainer />
     </header>
     <MapSearchContainer />

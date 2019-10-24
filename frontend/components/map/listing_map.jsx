@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MarkerManager from '../../util/marker_manager';
+import { withRouter } from 'react-router-dom';
 
 class ListingMap extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
+    this.searchParams = new URLSearchParams(`${this.props.history.location.hash}`);
+    let lat = parseFloat(this.searchParams.get('lat')) || 40.753647;
+    let lng = parseFloat(this.searchParams.get('lng')) || -73.980707;
+    this.center = {lat: lat, lng: lng}
   }
 
   componentDidMount() {
     const mapOptions = {
-      center: {lat: 40.753647, lng: -73.980707},
+      center: this.center,
       zoom: 13,
     }
 
@@ -41,4 +46,4 @@ class ListingMap extends React.Component {
   }
 }
 
-export default ListingMap;
+export default withRouter(ListingMap);
