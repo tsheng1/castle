@@ -10,6 +10,11 @@ class ListingMap extends React.Component {
     let lat = parseFloat(this.searchParams.get('lat')) || 40.753647;
     let lng = parseFloat(this.searchParams.get('lng')) || -73.980707;
     this.center = {lat: lat, lng: lng}
+    this.state = {
+      lat: lat,
+      lng: lng,
+    }
+    debugger
   }
 
   componentDidMount() {
@@ -26,10 +31,13 @@ class ListingMap extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (this.props.history.location.hash !== prevProps.location.hash) {
+      debugger
       const newLocation = new URLSearchParams(`${this.props.history.location.hash}`);
-      let lat = parseFloat(newLocation.get('lat')) || 40.753647;
-      let lng = parseFloat(newLocation.get('lng')) || -73.980707;
+      const lat = parseFloat(newLocation.get('lat')) || 40.753647;
+      const lng = parseFloat(newLocation.get('lng')) || -73.980707;
+      this.setState({lat: lat, lng: lng})
       this.center = { lat: lat, lng: lng }
+      this.map.setCenter(this.center)
     }
     
     this.MarkerManager.updateMarkers(this.props.listings)
@@ -47,6 +55,7 @@ class ListingMap extends React.Component {
   }
 
   render() {
+    debugger
     return (
       <div id='map-container' ref={map => this.mapNode = map} />
     )

@@ -6,17 +6,38 @@ import MapSearchContainer from '../listings/map_search_container';
 import Search from '../search/search';
 
 class Listing extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      updateToggle: false,
+    }
 
+    this.updateListingToggle = this.updateListingToggle.bind(this);
+  }
+
+  updateListingToggle() {
+    debugger
+    if (this.state.updateToggle === true) {
+      this.setState({updateToggle: false});
+      debugger
+    } else {
+      this.setState({updateToggle: true});
+      debugger
+    }
+
+    debugger
+  }
 
   render() {
 
+    debugger
     return (
       <div className="listing-page">
         <header className="header-bar">
           <Link to="/" className="header-link">
             <img src={window.logo_red} className="logo" />
           </Link>
-          <Search />
+          <Search updateListingToggle={this.updateListingToggle}/>
           <GreetingContainer />
         </header>
         <MapSearchContainer />

@@ -158,3 +158,12 @@
   color: #484848;
   font-weight: 300;
 }
+
+.no-result-text {
+  font-size: 18px;
+  color: #484848;
+  font-weight: 500;
+  padding-bottom: 100px;
+  margin-right: 40px;
+  border-bottom: 1px solid #ebebeb;
+}

@@ -31,24 +31,26 @@ class Search extends React.Component {
   }
 
   handleSubmit(e) {
-    if (e) {
-      e.preventDefault();
-    }
+    // if (e) {
+    //   e.preventDefault();
+    // }
     const lat = this.state.lat || 40.753647;
     const lng = this.state.lng || -73.980707;
-
     const hash = `&lat=${lat}&lng=${lng}`;
 
+    
     this.props.history.push({
       pathname: '/listings',
       hash: hash
     })
+    this.props.updateListingToggle();
+    debugger
   }
 
   render () {
     return (
       <div>
-        <input type="text" placeholder='Try "Manhattan"' className="search-bar" id="search-input" />
+        <input type="text" onSubmit={this.handleSubmit} placeholder='Try "Manhattan"' className="search-bar" id="search-input" />
       </div>
     )
   }

@@ -21,6 +21,12 @@ class ListingIndex extends React.Component {
         )
       })
     }
+
+    if (listings.length === 0) {
+      listings = (
+        <p className="no-result-text">Unfortunately, there were no castles found in your search area.</p>
+      )
+    }
     
 
     return (
