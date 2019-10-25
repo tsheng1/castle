@@ -24,7 +24,14 @@ class ListingMap extends React.Component {
     this.MarkerManager.updateMarkers(this.props.listings)
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps) {
+    if (this.props.history.location.hash !== prevProps.location.hash) {
+      const newLocation = new URLSearchParams(`${this.props.history.location.hash}`);
+      let lat = parseFloat(newLocation.get('lat')) || 40.753647;
+      let lng = parseFloat(newLocation.get('lng')) || -73.980707;
+      this.center = { lat: lat, lng: lng }
+    }
+    
     this.MarkerManager.updateMarkers(this.props.listings)
   }
 

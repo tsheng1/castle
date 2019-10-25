@@ -21,7 +21,6 @@ class Search extends React.Component {
 
   newLocation() {
     const loc = this.autocomplete.getPlace();
-    debugger
     this.setState({
       address: loc.formatted_address,
       lat: loc.geometry.location.lat(),
