@@ -78,10 +78,14 @@ validDate() {
 }
 ```
 
+### Location Search
+
+By combining the functionalities of the Google Maps API and Places API, users are able to use the search bar to search for listings by location. The map will also update after each search to show the relevant areas.
+
 ### Upcoming Features
 
 Upcoming features include
 
-+ Search functionality by location, availability, number of guests, type of home, and price
++ Search functionality by availability, number of guests, type of home, and price
 + Reviews for listings
 + Messaging between users and listing hosts
