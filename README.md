@@ -6,7 +6,7 @@
 Castle is a single page application inspired by AirBnB, where users are able to browse and book listings.
 
 ## Technologies
-
+  
 #### Backend
 
 + Ruby
