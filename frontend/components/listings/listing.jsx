@@ -16,21 +16,21 @@ class Listing extends React.Component {
   }
 
   updateListingToggle() {
-    debugger
+    
     if (this.state.updateToggle === true) {
       this.setState({updateToggle: false});
-      debugger
+      
     } else {
       this.setState({updateToggle: true});
-      debugger
+      
     }
 
-    debugger
+    
   }
 
   render() {
 
-    debugger
+    
     return (
       <div className="listing-page">
         <header className="header-bar">

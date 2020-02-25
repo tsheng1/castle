@@ -41,7 +41,7 @@ class Search extends React.Component {
       hash: hash
     })
     this.props.updateListingToggle();
-    debugger
+    
   }
 
   render () {

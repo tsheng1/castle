@@ -133,7 +133,7 @@ class ListingShow extends React.Component {
               <Calendar listing={this.props.listing}/>
             </div>
 
-            <div className="reviews-container">
+            {/* <div className="reviews-container">
               <div className="reviews-header">
                 <h2>Reviews</h2>
                 <div className="review-search-container"><input readOnly type="text" value="Search reviews" className="reviews-search" /></div>
@@ -141,7 +141,7 @@ class ListingShow extends React.Component {
               <div className="reviews">
                 <p className="reviews-body">No reviews (yet)</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="host-container">
               <div className="host-flex">

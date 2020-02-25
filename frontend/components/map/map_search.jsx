@@ -4,10 +4,10 @@ import ListingIndex from '../listings/listing_index'
 
 const MapSearch = ({listings, fetchListings, updateBounds, bounds}) => (
   <div className="index-page">
-    <div className="filter-buttons">
+    {/* <div className="filter-buttons">
       <button className="filter-button" >Dates</button>
       <button className="filter-button" >Guests</button>
-    </div>
+    </div> */}
 
     <div className="list-map">
         <ListingIndex listings={listings} fetchListings={fetchListings} />

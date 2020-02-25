@@ -14,7 +14,7 @@ class ListingMap extends React.Component {
       lat: lat,
       lng: lng,
     }
-    debugger
+    
   }
 
   componentDidMount() {
@@ -31,7 +31,7 @@ class ListingMap extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (this.props.history.location.hash !== prevProps.location.hash) {
-      debugger
+      
       const newLocation = new URLSearchParams(`${this.props.history.location.hash}`);
       const lat = parseFloat(newLocation.get('lat')) || 40.753647;
       const lng = parseFloat(newLocation.get('lng')) || -73.980707;
@@ -55,7 +55,7 @@ class ListingMap extends React.Component {
   }
 
   render() {
-    debugger
+    
     return (
       <div id='map-container' ref={map => this.mapNode = map} />
     )
